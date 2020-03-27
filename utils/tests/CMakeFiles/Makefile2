@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /Users/carlosgarzon/Desktop/code/cpp98/utils/tests
 CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp98/utils/tests
 
 #=============================================================================
-# Target rules for target CMakeFiles/runUnitTests.dir
+# Target rules for target CMakeFiles/gtestProject.dir
 
 # All Build rule for target.
-CMakeFiles/runUnitTests.dir/all:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/depend
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles --progress-num=1,2 "Built target runUnitTests"
-.PHONY : CMakeFiles/runUnitTests.dir/all
+CMakeFiles/gtestProject.dir/all:
+	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/depend
+	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles --progress-num=1,2 "Built target gtestProject"
+.PHONY : CMakeFiles/gtestProject.dir/all
 
 # Include target in all.
-all: CMakeFiles/runUnitTests.dir/all
+all: CMakeFiles/gtestProject.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/runUnitTests.dir/rule: cmake_check_build_system
+CMakeFiles/gtestProject.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/runUnitTests.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/gtestProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles 0
-.PHONY : CMakeFiles/runUnitTests.dir/rule
+.PHONY : CMakeFiles/gtestProject.dir/rule
 
 # Convenience name for target.
-runUnitTests: CMakeFiles/runUnitTests.dir/rule
+gtestProject: CMakeFiles/gtestProject.dir/rule
 
-.PHONY : runUnitTests
-
-# clean rule for target.
-CMakeFiles/runUnitTests.dir/clean:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/clean
-.PHONY : CMakeFiles/runUnitTests.dir/clean
+.PHONY : gtestProject
 
 # clean rule for target.
-clean: CMakeFiles/runUnitTests.dir/clean
+CMakeFiles/gtestProject.dir/clean:
+	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/clean
+.PHONY : CMakeFiles/gtestProject.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/gtestProject.dir/clean
 
 .PHONY : clean
 

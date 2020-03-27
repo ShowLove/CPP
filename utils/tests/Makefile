@@ -56,6 +56,17 @@ CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp98/utils/tests
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/local/mac-dev-env/cmake-3.9.3/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -77,17 +88,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/mac-dev-env/cmake-3.9.3/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,44 +122,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named runUnitTests
+# Target rules for targets named gtestProject
 
 # Build rule for target.
-runUnitTests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 runUnitTests
-.PHONY : runUnitTests
+gtestProject: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtestProject
+.PHONY : gtestProject
 
 # fast build rule for target.
-runUnitTests/fast:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/build
-.PHONY : runUnitTests/fast
+gtestProject/fast:
+	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/build
+.PHONY : gtestProject/fast
 
-cStringUtilsTest.o: cStringUtilsTest.cpp.o
+gtestsMain.o: gtestsMain.cpp.o
 
-.PHONY : cStringUtilsTest.o
+.PHONY : gtestsMain.o
 
 # target to build an object file
-cStringUtilsTest.cpp.o:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/cStringUtilsTest.cpp.o
-.PHONY : cStringUtilsTest.cpp.o
+gtestsMain.cpp.o:
+	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
+.PHONY : gtestsMain.cpp.o
 
-cStringUtilsTest.i: cStringUtilsTest.cpp.i
+gtestsMain.i: gtestsMain.cpp.i
 
-.PHONY : cStringUtilsTest.i
+.PHONY : gtestsMain.i
 
 # target to preprocess a source file
-cStringUtilsTest.cpp.i:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/cStringUtilsTest.cpp.i
-.PHONY : cStringUtilsTest.cpp.i
+gtestsMain.cpp.i:
+	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/gtestsMain.cpp.i
+.PHONY : gtestsMain.cpp.i
 
-cStringUtilsTest.s: cStringUtilsTest.cpp.s
+gtestsMain.s: gtestsMain.cpp.s
 
-.PHONY : cStringUtilsTest.s
+.PHONY : gtestsMain.s
 
 # target to generate assembly for a file
-cStringUtilsTest.cpp.s:
-	$(MAKE) -f CMakeFiles/runUnitTests.dir/build.make CMakeFiles/runUnitTests.dir/cStringUtilsTest.cpp.s
-.PHONY : cStringUtilsTest.cpp.s
+gtestsMain.cpp.s:
+	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
+.PHONY : gtestsMain.cpp.s
 
 # Help Target
 help:
@@ -167,13 +167,13 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... runUnitTests"
-	@echo "... cStringUtilsTest.o"
-	@echo "... cStringUtilsTest.i"
-	@echo "... cStringUtilsTest.s"
+	@echo "... gtestProject"
+	@echo "... gtestsMain.o"
+	@echo "... gtestsMain.i"
+	@echo "... gtestsMain.s"
 .PHONY : help
 
 

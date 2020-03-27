@@ -1,15 +1,29 @@
 cmake_minimum_required(VERSION 2.6)
 
-# For make-based builds, defines make target named test.
-# For Visual Studio builds, defines Visual Studio project named RUN_TESTS.
+set(GTEST_PROJECT gtestProject)
+
+project(${GTEST_PROJECT} C CXX)
+
+set(CMAKE_C_STANDARD 98)
+set(CMAKE_CXX_STANDARD 98)
+
 enable_testing()
 
-# The following folder will be included
+# The utils, test, and gtests directories
 include_directories("${PROJECT_SOURCE_DIR}/../")
+include_directories("${PROJECT_SOURCE_DIR}")
+include_directories("/usr/local/Cellar/gtest/include")
+include_directories("/usr/local/Cellar/gtest/lib")
 
-message(${PROJECT_SOURCE_DIR})
-
-add_executable(runUnitTests
-    cStringUtilsTest.cpp
+set(SOURCES
+  gtestsMain.cpp
 )
-target_link_libraries(runUnitTests gtest gtest_main)
+
+add_executable(${GTEST_PROJECT} ${SOURCES})
+target_link_libraries(${GTEST_PROJECT} PUBLIC
+  gtest
+  gtest_main
+)
+
+add_test(${GTEST_PROJECT} ${GTEST_PROJECT})
+

@@ -4,3 +4,6 @@
 CMakeFiles/runUnitTests.dir/cStringUtilsTest.cpp.o: ../cStringUtils.h
 CMakeFiles/runUnitTests.dir/cStringUtilsTest.cpp.o: cStringUtilsTest.cpp
 
+CMakeFiles/runUnitTests.dir/gtestsMain.cpp.o: ../cStringUtils.h
+CMakeFiles/runUnitTests.dir/gtestsMain.cpp.o: gtestsMain.cpp
+
