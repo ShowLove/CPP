@@ -8,42 +8,45 @@ class cStringUtilsTest : public ::testing::Test {
 
  public:
 
-  cStringUtilsTest() : m_function_param(10) {}
+  cStringUtilsTest() {}
   ~cStringUtilsTest(){}
 
  protected:
   virtual void SetUp() 
   {
-    // declare pointer 
-    pFooObject = new StringUtilsC();    
+  
   }
 
   virtual void TearDown() 
   {
-    // Code here will be called immediately after each test
-    // (right before the destructor).
-    if (pFooObject != NULL)
-    {
-      delete pFooObject;
-      pFooObject = NULL;
-    }
+
   }
 
     
-  StringUtilsC fooObject;              // declare object
-  StringUtilsC *pFooObject;
-  int m_function_param;                // this value is used to test constructor
+  StringUtilsC sUtilObj;
 };
 
-TEST_F(cStringUtilsTest, testConstructors){
-    EXPECT_TRUE(1);
+TEST_F(cStringUtilsTest, prompAndAlocStringDynamicallyTest){
 
-    StringUtilsC fooObject2 = fooObject; // use copy constructor
+  printf("Enter your string: ");
+  char *str = sUtilObj.prompAndAlocStringDynamically();
+  printf("OriginalString(%s)", str );
 
+  int length = sUtilObj.strLength(str);
+  printf("\n stringLength(%d) \n", length);
 
-    fooObject.fooFunction(m_function_param);
-    pFooObject->fooFunction(m_function_param);
-    fooObject2.fooFunction(m_function_param);
+  EXPECT_TRUE(length > 0);
+}
+
+TEST_F(cStringUtilsTest, strLengthTest){
+
+  const int expectedStringSize = 8;
+  char *str1 = "12345678";
+
+  int length = sUtilObj.strLength(str1);
+  printf("\n stringLength(%d) \n", length);
+
+  EXPECT_TRUE(length == expectedStringSize);
 }
 
 } // utils end

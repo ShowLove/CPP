@@ -3,8 +3,6 @@
 
 #include <iostream>
 
-#define M_INIT 8
-
 namespace utils
 {
 
@@ -12,30 +10,24 @@ class StringUtilsC
 {
  public:
 
-  StringUtilsC() : m_memberVariable(M_INIT) {}// Default constructor
-  StringUtilsC(int x) // Overloaded constructor
-  {
-    x = m_memberVariable;
-  }
-
-  StringUtilsC(const StringUtilsC &fc) // Copy constructor
-  {
-  	if (this!= &fc)
-  	{
-  	  m_memberVariable = fc.m_memberVariable;
-  	}
-  }
-  
-  void fooFunction(const int x) const; /* x will not change and no member variables will be altered */
-
+  StringUtilsC() {}// Default constructor  
   ~StringUtilsC(){}
+
+  /* Takes a pointer to a string and returns the length as an int
+   * @param *str pointer to a string
+   * @return returns the lenght of the string as an int
+   */
+  int strLength(char *str) const;
+
+  /* Feed chars to a string via getchar realocating size via realloc dynamically.
+   * It's up to the user to delete the memory alocated.
+   * @param initialSize default parameter indicating the size of the string in chars
+   * @return returns a dynamically allocated char* string, NULL if unsuccessful
+   */
+  char *prompAndAlocStringDynamically(const int initialSize = 8) const;
 
  private:
 
-  void fooPrivateFunction(); // This will not compile in fooFunction (!const)
-  void fooPrivateFunction() const;
-
-  int m_memberVariable; // Must be defined in constructor	
 };
 
 } //utils end

@@ -8,15 +8,11 @@ using namespace utils;
 
 int main()
 {
-	StringUtilsC fooObject;
-	fooObject.fooFunction(FUNCTION_PARAM);
+	StringUtilsC sUtilObj;
+	char *str = sUtilObj.prompAndAlocStringDynamically();
+	printf("OriginalString(%s)", str );
 
-	StringUtilsC *pFooObject = new StringUtilsC();
-    pFooObject->fooFunction(FUNCTION_PARAM);
-
-
-    StringUtilsC fooObject2 = fooObject;
-    fooObject2.fooFunction(FUNCTION_PARAM);
-
+	int length = sUtilObj.strLength(str);
+	printf("\n stringLength(%d) \n", length);
 	return 0;
 }
