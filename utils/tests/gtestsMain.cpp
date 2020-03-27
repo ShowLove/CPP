@@ -1,5 +1,4 @@
 #include "gtest/gtest.h"
-
 #include "cStringUtils.h"
 
 /* g++ -lgtest gtestsMain.cpp -o gtestsMain.out */

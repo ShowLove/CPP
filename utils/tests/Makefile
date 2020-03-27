@@ -48,24 +48,13 @@ RM = /usr/local/mac-dev-env/cmake-3.9.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/carlosgarzon/Desktop/code/cpp98/utils/tests
+CMAKE_SOURCE_DIR = /Users/carlosgarzon/Desktop/code/cpp98/utils
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp98/utils/tests
+CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp98/utils
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/mac-dev-env/cmake-3.9.3/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -91,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles 0
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/utils/CMakeFiles /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles/progress.marks
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/utils/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,31 +97,87 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named gtestProject
+# Convenience name for target.
+tests/CMakeFiles/gtestProject.dir/rule:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/gtestProject.dir/rule
+.PHONY : tests/CMakeFiles/gtestProject.dir/rule
 
-# Build rule for target.
-gtestProject: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtestProject
+# Convenience name for target.
+gtestProject: tests/CMakeFiles/gtestProject.dir/rule
+
 .PHONY : gtestProject
 
 # fast build rule for target.
 gtestProject/fast:
-	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/build
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/build
 .PHONY : gtestProject/fast
+
+__/cStringUtils.o: __/cStringUtils.cpp.o
+
+.PHONY : __/cStringUtils.o
+
+# target to build an object file
+__/cStringUtils.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/cStringUtils.cpp.o
+.PHONY : __/cStringUtils.cpp.o
+
+__/cStringUtils.i: __/cStringUtils.cpp.i
+
+.PHONY : __/cStringUtils.i
+
+# target to preprocess a source file
+__/cStringUtils.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/cStringUtils.cpp.i
+.PHONY : __/cStringUtils.cpp.i
+
+__/cStringUtils.s: __/cStringUtils.cpp.s
+
+.PHONY : __/cStringUtils.s
+
+# target to generate assembly for a file
+__/cStringUtils.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/cStringUtils.cpp.s
+.PHONY : __/cStringUtils.cpp.s
+
+cStringUtilsTest.o: cStringUtilsTest.cpp.o
+
+.PHONY : cStringUtilsTest.o
+
+# target to build an object file
+cStringUtilsTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/cStringUtilsTest.cpp.o
+.PHONY : cStringUtilsTest.cpp.o
+
+cStringUtilsTest.i: cStringUtilsTest.cpp.i
+
+.PHONY : cStringUtilsTest.i
+
+# target to preprocess a source file
+cStringUtilsTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/cStringUtilsTest.cpp.i
+.PHONY : cStringUtilsTest.cpp.i
+
+cStringUtilsTest.s: cStringUtilsTest.cpp.s
+
+.PHONY : cStringUtilsTest.s
+
+# target to generate assembly for a file
+cStringUtilsTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/cStringUtilsTest.cpp.s
+.PHONY : cStringUtilsTest.cpp.s
 
 gtestsMain.o: gtestsMain.cpp.o
 
@@ -140,7 +185,7 @@ gtestsMain.o: gtestsMain.cpp.o
 
 # target to build an object file
 gtestsMain.cpp.o:
-	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
 .PHONY : gtestsMain.cpp.o
 
 gtestsMain.i: gtestsMain.cpp.i
@@ -149,7 +194,7 @@ gtestsMain.i: gtestsMain.cpp.i
 
 # target to preprocess a source file
 gtestsMain.cpp.i:
-	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/gtestsMain.cpp.i
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.i
 .PHONY : gtestsMain.cpp.i
 
 gtestsMain.s: gtestsMain.cpp.s
@@ -158,7 +203,7 @@ gtestsMain.s: gtestsMain.cpp.s
 
 # target to generate assembly for a file
 gtestsMain.cpp.s:
-	$(MAKE) -f CMakeFiles/gtestProject.dir/build.make CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
 .PHONY : gtestsMain.cpp.s
 
 # Help Target
@@ -167,10 +212,15 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... test"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... gtestProject"
+	@echo "... __/cStringUtils.o"
+	@echo "... __/cStringUtils.i"
+	@echo "... __/cStringUtils.s"
+	@echo "... cStringUtilsTest.o"
+	@echo "... cStringUtilsTest.i"
+	@echo "... cStringUtilsTest.s"
 	@echo "... gtestsMain.o"
 	@echo "... gtestsMain.i"
 	@echo "... gtestsMain.s"
@@ -185,6 +235,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
