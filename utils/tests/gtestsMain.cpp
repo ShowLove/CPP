@@ -1,11 +1,6 @@
 #include "gtest/gtest.h"
 
-/* g++ -lgtest firstTest.cpp -o firstTest.out */
-
-TEST( ExampleTest, First ) {
-  EXPECT_TRUE(  true );
-}
-
+/* g++ -lgtest gtestsMain.cpp -o gtestsMain.out */
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv); 
   return RUN_ALL_TESTS();

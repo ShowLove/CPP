@@ -3,7 +3,17 @@
 ////////////////////////////////////
 
 /* this is a quick and dirty main that uses fooClass */
-// g++ basicCPPMainClass.cpp -o basicCPPMainClass.out && ./basicCPPMainClass.out
+g++ basicCPPMainClass.cpp -o basicCPPMainClass.out && ./basicCPPMainClass.out
 
 /* generic main with generic .cpp and .h file */
 g++ genericMain.cpp genericSource.cpp -o genericOut.out && ./genericOut.out
+
+/* run gtests */
+cd /Users/carlosgarzon/Desktop/code/cpp98/tests
+g++ -lgtest firstTest.cpp -o firstTest.out
+
+/* run gtests for utils */
+cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests
+cmake .
+make
+./runUnitTests

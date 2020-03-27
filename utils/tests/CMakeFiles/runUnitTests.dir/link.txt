@@ -1,0 +1,1 @@
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/runUnitTests.dir/cStringUtilsTest.cpp.o  -o runUnitTests -lgtest -lgtest_main 
