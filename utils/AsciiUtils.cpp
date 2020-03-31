@@ -3,7 +3,7 @@
 namespace utils
 {
 
-void AsciiUtils::printAsciiIntValueInfo()
+void AsciiUtils::printAsciiIntValueInfo() const
 {
   int a = (int) 'a'; int A = (int) 'A';  
   int null = (int) '\0'; //First letter of ascii

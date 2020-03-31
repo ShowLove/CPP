@@ -15,7 +15,9 @@ class AsciiUtils
   /* Prints ascii int representation info of a-z, A-Z, \0 - DEL
    * @return void
    */
-  void printAsciiIntValueInfo();
+  void printAsciiIntValueInfo() const;
+
+
 
   ~AsciiUtils(){}
 
