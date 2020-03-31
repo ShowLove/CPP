@@ -16,11 +16,14 @@ include_directories("/usr/local/Cellar/gtest/lib")
 set(SOURCES
   gtestsMain.cpp
   ../StringUtils_c.cpp
+  ../SortUtils.cpp
+  SortUtilsTest.cpp
   StringUtilsCTest.cpp
 )
 
 set(HEADERS
   ../StringUtils_c.h
+  ../SortUtils.h
 )
 
 add_executable(${GTEST_PROJECT} ${SOURCES})

@@ -125,6 +125,33 @@ gtestProject/fast:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/build
 .PHONY : gtestProject/fast
 
+SortUtilsTest.o: SortUtilsTest.cpp.o
+
+.PHONY : SortUtilsTest.o
+
+# target to build an object file
+SortUtilsTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o
+.PHONY : SortUtilsTest.cpp.o
+
+SortUtilsTest.i: SortUtilsTest.cpp.i
+
+.PHONY : SortUtilsTest.i
+
+# target to preprocess a source file
+SortUtilsTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.i
+.PHONY : SortUtilsTest.cpp.i
+
+SortUtilsTest.s: SortUtilsTest.cpp.s
+
+.PHONY : SortUtilsTest.s
+
+# target to generate assembly for a file
+SortUtilsTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.s
+.PHONY : SortUtilsTest.cpp.s
+
 StringUtilsCTest.o: StringUtilsCTest.cpp.o
 
 .PHONY : StringUtilsCTest.o
@@ -151,6 +178,33 @@ StringUtilsCTest.s: StringUtilsCTest.cpp.s
 StringUtilsCTest.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.s
 .PHONY : StringUtilsCTest.cpp.s
+
+__/SortUtils.o: __/SortUtils.cpp.o
+
+.PHONY : __/SortUtils.o
+
+# target to build an object file
+__/SortUtils.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.o
+.PHONY : __/SortUtils.cpp.o
+
+__/SortUtils.i: __/SortUtils.cpp.i
+
+.PHONY : __/SortUtils.i
+
+# target to preprocess a source file
+__/SortUtils.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.i
+.PHONY : __/SortUtils.cpp.i
+
+__/SortUtils.s: __/SortUtils.cpp.s
+
+.PHONY : __/SortUtils.s
+
+# target to generate assembly for a file
+__/SortUtils.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.s
+.PHONY : __/SortUtils.cpp.s
 
 __/StringUtils_c.o: __/StringUtils_c.cpp.o
 
@@ -215,9 +269,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... gtestProject"
+	@echo "... SortUtilsTest.o"
+	@echo "... SortUtilsTest.i"
+	@echo "... SortUtilsTest.s"
 	@echo "... StringUtilsCTest.o"
 	@echo "... StringUtilsCTest.i"
 	@echo "... StringUtilsCTest.s"
+	@echo "... __/SortUtils.o"
+	@echo "... __/SortUtils.i"
+	@echo "... __/SortUtils.s"
 	@echo "... __/StringUtils_c.o"
 	@echo "... __/StringUtils_c.i"
 	@echo "... __/StringUtils_c.s"

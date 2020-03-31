@@ -6,8 +6,24 @@
 
 #IncludeRegexTransform: 
 
+../..//SortUtils.h
+iostream
+-
+stdlib.h
+-
+
 ../..//StringUtils_c.h
 iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/SortUtils.cpp
+SortUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/SortUtils.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/SortUtils.h
+iostream
+-
+stdlib.h
 -
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/StringUtils_c.cpp
@@ -17,6 +33,12 @@ StringUtils_c.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/StringUtils_c.h
 iostream
 -
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtilsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
+SortUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtils.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/StringUtilsCTest.cpp
 gtest/gtest.h
