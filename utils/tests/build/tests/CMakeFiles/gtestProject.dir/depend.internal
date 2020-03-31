@@ -3,12 +3,14 @@
 
 tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o
  ../..//AsciiUtils.h
+ ../..//UtilConst.h
  /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtilsTest.cpp
 tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o
  ../..//SortUtils.h
  /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtilsTest.cpp
 tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o
  ../..//StringUtils_c.h
+ ../../UtilConst.h
  /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/StringUtilsCTest.cpp
 tests/CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.o
  /Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.cpp
@@ -19,6 +21,8 @@ tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.o
 tests/CMakeFiles/gtestProject.dir/__/StringUtils_c.cpp.o
  /Users/carlosgarzon/Desktop/code/cpp98/utils/StringUtils_c.cpp
  /Users/carlosgarzon/Desktop/code/cpp98/utils/StringUtils_c.h
+ /Users/carlosgarzon/Desktop/code/cpp98/utils/UtilConst.h
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
  ../..//StringUtils_c.h
+ ../../UtilConst.h
  /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtestsMain.cpp

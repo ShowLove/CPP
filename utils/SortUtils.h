@@ -15,6 +15,14 @@ class SortUtils
 
   SortUtils() {}// Default constructor
 
+  /* see:
+    http://p-nand-q.com/programming/cplusplus/using_member_functions_with_c_function_pointers.html
+    for in-depth info on qsort Using C++ Member Functions for C Function Pointers
+    see:
+    https://en.cppreference.com/w/c/algorithm/qsort
+    for in-depth info on qsort
+  */
+
   /* comparison function used in qsort. qsort(array, LEN, sizeof(int), mycmp)
    * since we you cannot pass C++ member function pointers to functions 
    * expecting C function pointers so we use a static class member function

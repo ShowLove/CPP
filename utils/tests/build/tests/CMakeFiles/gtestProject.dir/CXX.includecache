@@ -19,6 +19,12 @@ stdlib.h
 ../..//StringUtils_c.h
 iostream
 -
+UtilConst.h
+../../UtilConst.h
+
+../..//UtilConst.h
+
+../../UtilConst.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.cpp
 AsciiUtils.h
@@ -45,12 +51,18 @@ StringUtils_c.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/StringUtils_c.h
 iostream
 -
+UtilConst.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/UtilConst.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/UtilConst.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtilsTest.cpp
 gtest/gtest.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
 AsciiUtils.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtils.h
+UtilConst.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/UtilConst.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtilsTest.cpp
 gtest/gtest.h

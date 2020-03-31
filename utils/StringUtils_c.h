@@ -3,6 +3,8 @@
 
 #include <iostream>
 
+#include "UtilConst.h" // for DEFAULT_STR_SIZE
+
 namespace utils
 {
 
@@ -24,7 +26,7 @@ class StringUtilsC
    * @param initialSize default parameter indicating the size of the string in chars
    * @return returns a dynamically allocated char* string, NULL if unsuccessful
    */
-  char *prompAndAlocStringDynamically(const int initialSize = 8) const;
+  char *prompAndAlocStringDynamically(const int initialSize = UtilConst::DEFAULT_STR_SIZE) const;
 
  private:
 

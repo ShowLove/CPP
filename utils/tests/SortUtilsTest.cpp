@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 #include "SortUtils.h"
 
-#define PRINT_SORT_DEBUG 1
+#define PRINT_SORT_DEBUG 0
 
 namespace utils
 {

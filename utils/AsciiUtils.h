@@ -17,7 +17,12 @@ class AsciiUtils
    */
   void printAsciiIntValueInfo() const;
 
-
+  /* Get the int representation of an ascii character
+   * @param c ascii char that you want int value for
+   * @param asciiIntValue [out] the int representation of the ascii character
+   * @return returns true if successfull, false otherwise
+   */
+  bool getAsciiInt(const char c, int& asciiIntValue) const;
 
   ~AsciiUtils(){}
 

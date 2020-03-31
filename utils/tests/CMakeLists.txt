@@ -13,6 +13,13 @@ include_directories("${CMAKE_CURRENT_SOURCE_DIR}")
 include_directories("/usr/local/Cellar/gtest/include")
 include_directories("/usr/local/Cellar/gtest/lib")
 
+set(HEADERS
+  ../UtilConstants.h
+  ../AsciiUtils.h
+  ../StringUtils_c.h
+  ../SortUtils.h
+)
+
 set(SOURCES
   gtestsMain.cpp
   ../StringUtils_c.cpp
@@ -21,12 +28,6 @@ set(SOURCES
   StringUtilsCTest.cpp
   SortUtilsTest.cpp
   AsciiUtilsTest.cpp
-)
-
-set(HEADERS
-  ../AsciiUtils.h
-  ../StringUtils_c.h
-  ../SortUtils.h
 )
 
 add_executable(${GTEST_PROJECT} ${SOURCES})
