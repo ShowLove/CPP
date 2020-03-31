@@ -29,10 +29,22 @@ class SortUtils
    *         zero if the arguments are equal
    */
   static int mycmp(const void* a, const void* b)
-  {     
-    //return (*(int *)a - *(int *)b); // C style 
-    return *static_cast<const int*>(a) - *static_cast<const int*>(b);
+  { 
+    int arg1 = *static_cast<const int*>(a);
+    int arg2 = *static_cast<const int*>(b);
+    //return (*(int *)a - *(int *)b); // C style (error, see below)
+    //return *static_cast<const int*>(a) - *static_cast<const int*>(b); FAILS with INT_MIN
+    return (arg1 > arg2) - (arg1 < arg2);
   }
+
+  /*
+   * Checks to see if an array of ints is sorted
+   * @param *ar int pointer to an array
+   * @param the size of the array
+   * @param returns true if it is sorted, false otherwise
+   */
+  bool SimpleIsSorted(const int* array, int size);
+
 
   ~SortUtils(){}
 
