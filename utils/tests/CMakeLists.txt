@@ -15,12 +15,12 @@ include_directories("/usr/local/Cellar/gtest/lib")
 
 set(SOURCES
   gtestsMain.cpp
-  ../cStringUtils.cpp
-  cStringUtilsTest.cpp
+  ../StringUtils_c.cpp
+  StringUtilsCTest.cpp
 )
 
 set(HEADERS
-  ../cStringUtils.h
+  ../StringUtils_c.h
 )
 
 add_executable(${GTEST_PROJECT} ${SOURCES})

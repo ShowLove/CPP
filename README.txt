@@ -16,7 +16,4 @@ cd /Users/carlosgarzon/Desktop/code/cpp98/tests
 g++ -lgtest firstTest.cpp -o firstTest.out
 
 /* run gtests for utils */
-cd /Users/carlosgarzon/Desktop/code/cpp98/utils/
-cmake .
-make
-./tests/gtestProject
+cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/ && cmake /Users/carlosgarzon/Desktop/code/cpp98/utils && make && ./tests/gtestProject

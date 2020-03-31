@@ -1,5 +1,0 @@
-/Users/carlosgarzon/Desktop/code/cpp98/utils/CMakeFiles/rebuild_cache.dir
-/Users/carlosgarzon/Desktop/code/cpp98/utils/CMakeFiles/edit_cache.dir
-/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles/rebuild_cache.dir
-/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles/edit_cache.dir
-/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/CMakeFiles/gtestProject.dir
