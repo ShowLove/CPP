@@ -17,11 +17,14 @@ set(SOURCES
   gtestsMain.cpp
   ../StringUtils_c.cpp
   ../SortUtils.cpp
-  SortUtilsTest.cpp
+  ../AsciiUtils.cpp
   StringUtilsCTest.cpp
+  SortUtilsTest.cpp
+  AsciiUtilsTest.cpp
 )
 
 set(HEADERS
+  ../AsciiUtils.h
   ../StringUtils_c.h
   ../SortUtils.h
 )

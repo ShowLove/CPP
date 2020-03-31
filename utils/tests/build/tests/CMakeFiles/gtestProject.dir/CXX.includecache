@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../..//AsciiUtils.h
+iostream
+-
+
 ../..//SortUtils.h
 iostream
 -
@@ -13,6 +17,14 @@ stdlib.h
 -
 
 ../..//StringUtils_c.h
+iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.cpp
+AsciiUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.h
 iostream
 -
 
@@ -33,6 +45,12 @@ StringUtils_c.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/StringUtils_c.h
 iostream
 -
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtilsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
+AsciiUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtils.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtilsTest.cpp
 gtest/gtest.h

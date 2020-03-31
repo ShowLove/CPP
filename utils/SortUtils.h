@@ -37,6 +37,12 @@ class SortUtils
     return (arg1 > arg2) - (arg1 < arg2);
   }
 
+  /* @param a first copmarison parameter
+   * @param b second comparison parameter
+   * @return returns the smaller between a and b, if they are eqaul it returns b
+   */ 
+  int min(int a, int b){ return (a < b) ? a : b; }
+
   /*
    * Checks to see if an array of ints is sorted
    * @param *ar int pointer to an array
