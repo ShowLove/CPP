@@ -5,6 +5,10 @@ tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o: ../../AsciiUtils.h
 tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o: ../../UtilConst.h
 tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o: ../AsciiUtilsTest.cpp
 
+tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o: ../../MathUtils.h
+tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o: ../../UtilConst.h
+tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o: ../MathUtilsTest.cpp
+
 tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o: ../../SortUtils.h
 tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o: ../SortUtilsTest.cpp
 
@@ -14,6 +18,10 @@ tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o: ../StringUtilsCTest.cp
 
 tests/CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.o: ../../AsciiUtils.cpp
 tests/CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.o: ../../AsciiUtils.h
+
+tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o: ../../MathUtils.cpp
+tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o: ../../MathUtils.h
+tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o: ../../UtilConst.h
 
 tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.o: ../../SortUtils.cpp
 tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.o: ../../SortUtils.h

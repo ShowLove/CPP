@@ -64,4 +64,34 @@ TEST_F(StringUtilsCTest, strLengthTest){
   EXPECT_TRUE(length == expectedStringSize);
 }
 
+// Tests reverseString, swapP and stringIsReverseString function
+TEST_F(StringUtilsCTest, stringIsReverseStringTest){
+
+  // Even numbers
+  //char *strA = (char *) "12345678"; // cannot swap string literal
+  char strA[] = "12345678"; //  makes strA an array into which the contents of "12345678" are copied
+  char str1[] = "12345678";
+  char str2[] = "87654321";
+
+  //sUtilObj.reverseString(strA);
+
+  EXPECT_TRUE(sUtilObj.stringIsReverseString(str1, str2));
+  sUtilObj.reverseString(strA);
+  EXPECT_TRUE(sUtilObj.stringIsReverseString(str1, strA));
+
+  // Odd numbers
+  char strB[] = "123456789"; //  makes strB an array into which the contents of "12345678" are copied
+  char str3[] = "123456789";
+  char str4[] = "987654321";
+
+  //sUtilObj.reverseString(strA);
+  EXPECT_TRUE(sUtilObj.stringIsReverseString(str3, str4));
+  sUtilObj.reverseString(strB);
+  EXPECT_TRUE(sUtilObj.stringIsReverseString(str3, strB));
+
+  //size is different
+  EXPECT_FALSE(sUtilObj.stringIsReverseString(str3, str1));
+
+}
+
 } // utils end

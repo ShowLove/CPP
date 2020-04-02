@@ -24,5 +24,133 @@ bool SortUtils::SimpleIsSorted(const int *array, int size) {
 
   return true;
 }
+
+/*
+
+void SortUtils::bucketSort(int *array, int n){   
+    
+    int i, j;   
+    int count[n+1];  
+    for(i=0; i < n; i++)
+        count[i] = 0;   
+    for(i=0; i < n; i++)
+        (count[array[i]])++; 
+    for(i=0,j=0; i < n; i++) 
+        for(; count[i]>0;(count[i])--)      
+            array[j++] = i;       
+} 
+
+void SortUtils::insertionSort(int *array, int n){
+    
+    int i, j, k, temp; 
+
+    for ( i = 0 ; i < n ; i++ ){
+        for ( j = 0 ; j < i ; j++ ){
+            if ( array[j] > array[i] ){
+                temp = array[j] ;
+                array[j] = array[i] ;
+                
+                for ( k = i ; k > j ; k-- )
+                    array[k] = array[k - 1] ;
+                
+                array[k + 1] = temp ;
+            }
+        }
+    }
+    
+}
+
+void SortUtils::selectionSort(int *array, int n){
+    
+    int i, j, min, temp;
+    for(i=0;i<n-1;i++){
+        min = i;
+        for(j= i+1;j<n;j++)
+            if(array[j]<array[min])
+                min = j;
+        //notice we didn't use the swap func 
+        temp=array[i];
+        array[i]=array[min];
+        array[min]=temp;
+    }
+}
+
+
+void SortUtils::bubbleSort(int *array, int n) //best n, Worst n^2 
+{
+    int i, j;
+    
+    for (i = 0 ; i < ( n - 1 ); i++)
+    {
+        for (j = 0 ; j < n - i - 1; j++)
+            if (array[j] > array[j+1]) // For decreasing order use < 
+                swap(array, j);
+    }
+}
+
+void SortUtils::Merge(int *pInArray, int nLeftSize, int nRightSize)
+{
+//  int *pTemp = new int[nLeftSize + nRightSize];
+  int *pTemp = malloc( sizeof(int)*(nLeftSize + nRightSize) );
+  int nLeftIndex = 0, nRightIndex = 0;
+  int *pLeftArray = pInArray, *pRightArray = &pInArray[nLeftSize];
+
+  while (nLeftIndex + nRightIndex < nLeftSize + nRightSize)
+  {
+    if (nLeftIndex < nLeftSize && 
+      (pLeftArray[nLeftIndex] <= pRightArray[nRightIndex] || nRightIndex >= nRightSize))
+    {
+      pTemp[nLeftIndex + nRightIndex] = pLeftArray[nLeftIndex];
+      nLeftIndex++;
+    }
+    if (nRightIndex < nRightSize && 
+      (pRightArray[nRightIndex] < pLeftArray[nLeftIndex] || nLeftIndex >= nLeftSize))
+    {
+      pTemp[nLeftIndex + nRightIndex] = pRightArray[nRightIndex];
+      nRightIndex++;
+    }
+  }
+
+  for (int i = 0; i < nLeftSize + nRightSize; i++)
+  {
+    pInArray[i] = pTemp[i];
+  }
+  //delete[] pTemp;
+  free(pTemp);
+}
+
+void SortUtils::MergeSort(int *pInArray, int nSize)
+{
+  if (nSize <= 1)
+  {
+    return;
+  }
+
+  int nLeftSize = nSize / 2;
+  int nRightSize = nSize - nLeftSize;
+  MergeSort(pInArray, nLeftSize);
+  MergeSort(&pInArray[nLeftSize], nRightSize);
+  Merge(pInArray, nLeftSize, nRightSize);
+}
+//////////////////////////////////MERGE_SORT_END
+
+//////////////////////////////////HELPER_FUNCTIONS
+
+void SortUtils::rePolute(int *array, int array_size){
+    int i;
+
+    //Insert random data into the array from [0,99]
+    for( i = 0; i < array_size; i++ )
+        array[i] = rand() % 100;
+}
+
+void SortUtils::swap(int *array, int index ){
+    //lagit swap function
+    array[index] = array[index+1] + array[index]; 
+    array[index + 1] = array[index] - array[index + 1]; 
+    array[index] =  array[index] - array[index + 1]; 
+}
+
+*/
   
 } // utils end

@@ -10,6 +10,10 @@
 iostream
 -
 
+../..//MathUtils.h
+iostream
+-
+
 ../..//SortUtils.h
 iostream
 -
@@ -31,6 +35,16 @@ AsciiUtils.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.h
+iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/MathUtils.cpp
+MathUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/MathUtils.h
+UtilConst.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/UtilConst.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/MathUtils.h
 iostream
 -
 
@@ -61,6 +75,14 @@ gtest/gtest.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
 AsciiUtils.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtils.h
+UtilConst.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/UtilConst.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/MathUtilsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
+MathUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/MathUtils.h
 UtilConst.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/UtilConst.h
 

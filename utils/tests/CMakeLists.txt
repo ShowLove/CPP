@@ -18,6 +18,7 @@ set(HEADERS
   ../AsciiUtils.h
   ../StringUtils_c.h
   ../SortUtils.h
+  ../MathUtils.h
 )
 
 set(SOURCES
@@ -25,9 +26,11 @@ set(SOURCES
   ../StringUtils_c.cpp
   ../SortUtils.cpp
   ../AsciiUtils.cpp
+  ../MathUtils.cpp
   StringUtilsCTest.cpp
   SortUtilsTest.cpp
   AsciiUtilsTest.cpp
+  MathUtilsTest.cpp
 )
 
 add_executable(${GTEST_PROJECT} ${SOURCES})

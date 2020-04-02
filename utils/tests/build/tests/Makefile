@@ -152,6 +152,33 @@ AsciiUtilsTest.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.s
 .PHONY : AsciiUtilsTest.cpp.s
 
+MathUtilsTest.o: MathUtilsTest.cpp.o
+
+.PHONY : MathUtilsTest.o
+
+# target to build an object file
+MathUtilsTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o
+.PHONY : MathUtilsTest.cpp.o
+
+MathUtilsTest.i: MathUtilsTest.cpp.i
+
+.PHONY : MathUtilsTest.i
+
+# target to preprocess a source file
+MathUtilsTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.i
+.PHONY : MathUtilsTest.cpp.i
+
+MathUtilsTest.s: MathUtilsTest.cpp.s
+
+.PHONY : MathUtilsTest.s
+
+# target to generate assembly for a file
+MathUtilsTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.s
+.PHONY : MathUtilsTest.cpp.s
+
 SortUtilsTest.o: SortUtilsTest.cpp.o
 
 .PHONY : SortUtilsTest.o
@@ -232,6 +259,33 @@ __/AsciiUtils.s: __/AsciiUtils.cpp.s
 __/AsciiUtils.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.s
 .PHONY : __/AsciiUtils.cpp.s
+
+__/MathUtils.o: __/MathUtils.cpp.o
+
+.PHONY : __/MathUtils.o
+
+# target to build an object file
+__/MathUtils.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o
+.PHONY : __/MathUtils.cpp.o
+
+__/MathUtils.i: __/MathUtils.cpp.i
+
+.PHONY : __/MathUtils.i
+
+# target to preprocess a source file
+__/MathUtils.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.i
+.PHONY : __/MathUtils.cpp.i
+
+__/MathUtils.s: __/MathUtils.cpp.s
+
+.PHONY : __/MathUtils.s
+
+# target to generate assembly for a file
+__/MathUtils.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.s
+.PHONY : __/MathUtils.cpp.s
 
 __/SortUtils.o: __/SortUtils.cpp.o
 
@@ -326,6 +380,9 @@ help:
 	@echo "... AsciiUtilsTest.o"
 	@echo "... AsciiUtilsTest.i"
 	@echo "... AsciiUtilsTest.s"
+	@echo "... MathUtilsTest.o"
+	@echo "... MathUtilsTest.i"
+	@echo "... MathUtilsTest.s"
 	@echo "... SortUtilsTest.o"
 	@echo "... SortUtilsTest.i"
 	@echo "... SortUtilsTest.s"
@@ -335,6 +392,9 @@ help:
 	@echo "... __/AsciiUtils.o"
 	@echo "... __/AsciiUtils.i"
 	@echo "... __/AsciiUtils.s"
+	@echo "... __/MathUtils.o"
+	@echo "... __/MathUtils.i"
+	@echo "... __/MathUtils.s"
 	@echo "... __/SortUtils.o"
 	@echo "... __/SortUtils.i"
 	@echo "... __/SortUtils.s"

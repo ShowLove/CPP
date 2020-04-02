@@ -27,6 +27,55 @@ class StringUtilsC
    * @return returns a dynamically allocated char* string, NULL if unsuccessful
    */
   char *prompAndAlocStringDynamically(const int initialSize = UtilConst::DEFAULT_STR_SIZE) const;
+  
+  /*
+   * TODO
+   */ 
+  void swapP( char *a, char *b );
+
+  /*
+   * TODO
+   */ 
+  char *reverseString(char *str);
+
+  /*
+   * TODO
+   */ 
+  bool stringIsReverseString(char *str1, char *str2);
+
+  /*
+   * TODO
+   */ 
+  //void bubbleSort(int *array, int n);
+  /*
+   * TODO
+   */ 
+  //void selectionSort(int *array, int n);
+  /*
+   * TODO
+   */ 
+  //void insertionSort(int *array, int n);
+  /*
+   * TODO
+   */ 
+  //void bucketSort(int *array, int n);
+  /*
+   * TODO
+   */ 
+  //void MergeSort(int *pInArray, int nSize);
+  ////////HELPER FUNCTIONS//////////////
+  /*
+   * TODO
+   */ 
+  //void swap(int *array, int index );
+  /*
+   * TODO
+   */ 
+  //void printA(int *array, int n);
+   /*
+   * TODO
+   */ 
+  //void rePolute(int *array, int array_size);
 
  private:
 
