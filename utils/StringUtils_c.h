@@ -43,39 +43,6 @@ class StringUtilsC
    */ 
   bool stringIsReverseString(char *str1, char *str2);
 
-  /*
-   * TODO
-   */ 
-  //void bubbleSort(int *array, int n);
-  /*
-   * TODO
-   */ 
-  //void selectionSort(int *array, int n);
-  /*
-   * TODO
-   */ 
-  //void insertionSort(int *array, int n);
-  /*
-   * TODO
-   */ 
-  //void bucketSort(int *array, int n);
-  /*
-   * TODO
-   */ 
-  //void MergeSort(int *pInArray, int nSize);
-  ////////HELPER FUNCTIONS//////////////
-  /*
-   * TODO
-   */ 
-  //void swap(int *array, int index );
-  /*
-   * TODO
-   */ 
-  //void printA(int *array, int n);
-   /*
-   * TODO
-   */ 
-  //void rePolute(int *array, int array_size);
 
  private:
 

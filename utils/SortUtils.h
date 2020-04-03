@@ -15,6 +15,8 @@ class SortUtils
 
   SortUtils() {}// Default constructor
 
+    ~SortUtils(){}
+
   /* see:
     http://p-nand-q.com/programming/cplusplus/using_member_functions_with_c_function_pointers.html
     for in-depth info on qsort Using C++ Member Functions for C Function Pointers
@@ -59,12 +61,23 @@ class SortUtils
    */
   bool SimpleIsSorted(const int* array, int size);
 
+  /*************************************************
+   * my sort functions
+   *************************************************/
 
-  ~SortUtils(){}
-
+  void insertionSort(int *array, int arraySize);
+  void selectionSort(int *array, int arraySize); 
+  void bubbleSort(int *array, int arraySize);
+  void MergeSort(int *pInArray, int nSize);
+  void Merge(int *pInArray, int nLeftSize, int nRightSize);
+  ////////HELPER FUNCTIONS//////////////
+  void swap(int *array, int index );
+  void printArray(int *array, int arraySize);
+  void rePolute(int *array, int arraySize);
+  int *getArrayRandom(int arraySize, int upperBounds);
+  void randomizeArray(int* array, int arraySize, int upperBounds);
  private:
 
-  void fooPrivateFunction(); 
 };
 
 } //utils end

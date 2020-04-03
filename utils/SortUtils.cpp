@@ -25,26 +25,11 @@ bool SortUtils::SimpleIsSorted(const int *array, int size) {
   return true;
 }
 
-/*
-
-void SortUtils::bucketSort(int *array, int n){   
-    
-    int i, j;   
-    int count[n+1];  
-    for(i=0; i < n; i++)
-        count[i] = 0;   
-    for(i=0; i < n; i++)
-        (count[array[i]])++; 
-    for(i=0,j=0; i < n; i++) 
-        for(; count[i]>0;(count[i])--)      
-            array[j++] = i;       
-} 
-
-void SortUtils::insertionSort(int *array, int n){
+void SortUtils::insertionSort(int *array, int arraySize){
     
     int i, j, k, temp; 
 
-    for ( i = 0 ; i < n ; i++ ){
+    for ( i = 0 ; i < arraySize ; i++ ){
         for ( j = 0 ; j < i ; j++ ){
             if ( array[j] > array[i] ){
                 temp = array[j] ;
@@ -60,12 +45,12 @@ void SortUtils::insertionSort(int *array, int n){
     
 }
 
-void SortUtils::selectionSort(int *array, int n){
+void SortUtils::selectionSort(int *array, int arraySize){
     
     int i, j, min, temp;
-    for(i=0;i<n-1;i++){
+    for(i=0;i<arraySize-1;i++){
         min = i;
-        for(j= i+1;j<n;j++)
+        for(j= i+1;j<arraySize;j++)
             if(array[j]<array[min])
                 min = j;
         //notice we didn't use the swap func 
@@ -75,23 +60,22 @@ void SortUtils::selectionSort(int *array, int n){
     }
 }
 
-
-void SortUtils::bubbleSort(int *array, int n) //best n, Worst n^2 
+void SortUtils::bubbleSort(int *array, int arraySize) //best arraySize, Worst arraySize^2 
 {
     int i, j;
     
-    for (i = 0 ; i < ( n - 1 ); i++)
+    for (i = 0 ; i < ( arraySize - 1 ); i++)
     {
-        for (j = 0 ; j < n - i - 1; j++)
-            if (array[j] > array[j+1]) // For decreasing order use < 
+        for (j = 0 ; j < arraySize - i - 1; j++)
+            if (array[j] > array[j+1]) /* For decreasing order use < */
                 swap(array, j);
     }
 }
 
 void SortUtils::Merge(int *pInArray, int nLeftSize, int nRightSize)
 {
-//  int *pTemp = new int[nLeftSize + nRightSize];
-  int *pTemp = malloc( sizeof(int)*(nLeftSize + nRightSize) );
+  //int *pTemp = malloc( sizeof(int)*(nLeftSize + nRightSize) );
+  int *pTemp = new int[nLeftSize + nRightSize];
   int nLeftIndex = 0, nRightIndex = 0;
   int *pLeftArray = pInArray, *pRightArray = &pInArray[nLeftSize];
 
@@ -115,8 +99,8 @@ void SortUtils::Merge(int *pInArray, int nLeftSize, int nRightSize)
   {
     pInArray[i] = pTemp[i];
   }
-  //delete[] pTemp;
-  free(pTemp);
+  delete[] pTemp;
+  //free(pTemp);
 }
 
 void SortUtils::MergeSort(int *pInArray, int nSize)
@@ -132,15 +116,14 @@ void SortUtils::MergeSort(int *pInArray, int nSize)
   MergeSort(&pInArray[nLeftSize], nRightSize);
   Merge(pInArray, nLeftSize, nRightSize);
 }
-//////////////////////////////////MERGE_SORT_END
 
-//////////////////////////////////HELPER_FUNCTIONS
+//////////////////////HELPER_FUNCTIONS//////////////////////
 
-void SortUtils::rePolute(int *array, int array_size){
+void SortUtils::rePolute(int *array, int arraySize){
     int i;
 
     //Insert random data into the array from [0,99]
-    for( i = 0; i < array_size; i++ )
+    for( i = 0; i < arraySize; i++ )
         array[i] = rand() % 100;
 }
 
@@ -151,6 +134,32 @@ void SortUtils::swap(int *array, int index ){
     array[index] =  array[index] - array[index + 1]; 
 }
 
-*/
+// Print an array of arraySize integers, space-separated, followed by two newline chars.
+void SortUtils::printArray(int *array, int arraySize)
+{
+  int i;
+  for (i = 0; i < arraySize; i++)
+    printf("%d%c", array[i], (i == arraySize - 1) ? '\n' : ' ');
+    
+//    printf("\arraySize");
+}
+
+int* SortUtils::getArrayRandom(int arraySize, int upperBounds)
+{
+  int* array = new int[arraySize];
+
+  //Insert random data into the array from [0,(upperBounds - 1)]
+  for( int i = 0; i < arraySize; i++ )
+      array[i] = rand() % upperBounds;
+
+  return array;
+}
+
+void SortUtils::randomizeArray(int* array, int arraySize, int upperBounds)
+{
+  //Insert random data into the array from [0,(upperBounds - 1)]
+  for( int i = 0; i < arraySize; i++ )
+      array[i] = rand() % upperBounds;
+}
   
 } // utils end

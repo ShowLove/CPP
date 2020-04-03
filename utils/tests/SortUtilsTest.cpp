@@ -85,62 +85,31 @@ TEST_F(SortUtilsTest, SimpleIsSortedTestFail){
 // Test all the sort functions 
 TEST_F(SortUtilsTest, allSortsTest){
 
-  /*
-    int i = 0, array_size, *array;
-    //clock_t
-    uintmax_t start,end;
+  int arraySize = 10, upperBound = 100;
+  int* array = sortUtilsObject.getArrayRandom(arraySize, upperBound);
 
-    //promp user for array size
-    printf("How long would you like your unsorted array to be? array_Length: ");
-    scanf("%d", &array_size ); 
+  //insertionSort test
+  sortUtilsObject.insertionSort(array, arraySize);
+  EXPECT_TRUE(sortUtilsObject.SimpleIsSorted(array, arraySize));
+  sortUtilsObject.randomizeArray(array, arraySize, upperBound);
 
-    //allocate array
-    array = malloc( sizeof(int) * array_size );
+  //selectionSort test
+  sortUtilsObject.selectionSort(array, arraySize);
+  EXPECT_TRUE(sortUtilsObject.SimpleIsSorted(array, arraySize));
+  sortUtilsObject.randomizeArray(array, arraySize, upperBound);
 
-    //Insert random data into the array from [0,99]
-    for( i = 0; i < array_size; i++ )
-        array[i] = rand() % 100;
+  //bubbleSort test
+  sortUtilsObject.bubbleSort(array, arraySize);
+  EXPECT_TRUE(sortUtilsObject.SimpleIsSorted(array, arraySize));
+  sortUtilsObject.randomizeArray(array, arraySize, upperBound);
 
-    printf("\n");
-    //bubble sort 
-    printf("original \t->\t\t ");        printA( array, array_size );
-    start = clock();
-    bubbleSort(array, array_size);
-    end = clock(); end = (end - start)/CLOCKS_PER_SEC;
-    printf("bubble sort \t-> \t\t ");     printA( array, array_size ); printf("Clock_Time: %ju\n\n", (uintmax_t)(clock_t)end);
-    rePolute(array,array_size);
+  //MergeSort test
+  sortUtilsObject.MergeSort(array, arraySize);
+  EXPECT_TRUE(sortUtilsObject.SimpleIsSorted(array, arraySize));
+  sortUtilsObject.randomizeArray(array, arraySize, upperBound);
 
-    //selection sort
-    printf("original \t->\t\t ");        printA( array, array_size );
-    selectionSort(array, array_size);
-    printf("selection sort \t->\t\t "); printA( array, array_size ); printf("\n");
-    rePolute(array,array_size);
-
-    //insertion sort
-    printf("original \t->\t\t ");        printA( array, array_size );
-    insertionSort(array, array_size);
-    printf("insertion sort \t->\t\t "); printA( array, array_size ); printf("\n");
-    rePolute(array,array_size);
-
-    // Theres a but thats no worth my time to find right now in this sort
-    //bucket sort
-    
-    //bucketSort(array, array_size);
-    //printf("bucket sort -> \t\t "); printA( array, array_size );    
-    //rePolute(array,array_size);
-
-    //quick sort
-    printf("original \t->\t\t ");        printA( array, array_size );
-    qsort(array, array_size, sizeof(int), mycmp);
-    printf("quick sort \t-> \t\t "); printA( array, array_size );  printf("\n");  
-    rePolute(array,array_size);
-
-    //mergesort
-    printf("original \t->\t\t ");        printA( array, array_size );
-    MergeSort(array, array_size);
-    printf("merge sort \t-> \t\t "); printA( array, array_size ); printf("\n");
-    rePolute(array,array_size);
-    */
+  // Clean your room
+  delete[] array;
 }
 
 } // utils end
