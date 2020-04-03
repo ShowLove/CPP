@@ -27,8 +27,8 @@ class MathUtils
   int nThPrime(int n) const;
 
   /* Gets the Nth finonacci number using recursion
-   * @param nThNum nth number in the fibonacci sequence
-   * @return fibonacci number n
+   * @param nThNum nth number in the fibonacci sequence, assumes n is non negative
+   * @return fibonacci number n, 
    */
   int getNthFibonacciNumRec(const int nthNum ) const;
 
@@ -37,6 +37,20 @@ class MathUtils
    * @return fibonacci number n
    */
   int getNthFibonacciNumSeq(const int nthNum ) const;
+
+  /* Gets the Nth factorial number using recursion 
+   * this function cannot handle big factorials i.e larger than 9
+   * @param nThNum nth number in the factorial sequence, assumes n is non negative
+   * @return factorial number n
+   */
+  int getNthFactorialRec(const int n) const;
+
+  /* Gets the Nth factorial number using sequential logic 
+   * this function cannot handle big factorials i.e larger than 9
+   * @param nThNum nth number in the factorial sequence, assumes n is non negative
+   * @return factorial number n
+   */
+  int getNthFactorialSeq(const int n) const;
 
   ~MathUtils(){}
 

@@ -49,22 +49,40 @@ int MathUtils::getNthFibonacciNumRec(const int num ) const
 
 int MathUtils::getNthFibonacciNumSeq(const int num ) const
 {
-    int n = num;
-    int num1 = 0; int num2 = 1; int num_next = 1;
-    if (n < 2)
-      return (n < 1) ? 0 : 1;
-    
-    int i = 0;
-    while(i <= (n-2))
-    {
-      num_next = num1 + num2;
-      num1 = num2;
-      num2 = num_next;
+  int n = num;
+  int num1 = 0; int num2 = 1; int num_next = 1;
+  if (n < 2)
+    return (n < 1) ? 0 : 1;
 
-      i++;
-    }
+  int i = 0;
+  while(i <= (n-2))
+  {
+    num_next = num1 + num2;
+    num1 = num2;
+    num2 = num_next;
 
-    return num_next;
+    i++;
+  }
+
+  return num_next;
+}
+
+int MathUtils::getNthFactorialRec(const int n) const
+{
+  if (n == 0)
+    return 1;
+  else
+    return(n * getNthFactorialRec(n-1));
+}
+
+int MathUtils::getNthFactorialSeq(const int n) const
+{
+  int factorial = 1;
+
+  for(int i = 1; i <=n; ++i)
+    factorial *= i;
+  
+  return factorial;
 }
 
   

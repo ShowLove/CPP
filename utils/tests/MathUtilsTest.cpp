@@ -55,7 +55,7 @@ TEST_F(MathUtilsTest, nThPrimeTest){
 // Test fibonacci functions
 TEST_F(MathUtilsTest, fibonacciTest){
 
-  int number = mathUtilsObj.getNthFibonacciNumRec(0);
+  unsigned long long number = mathUtilsObj.getNthFibonacciNumRec(0);
 
   // Using recursive function
   EXPECT_TRUE(number == 0);
@@ -91,6 +91,17 @@ TEST_F(MathUtilsTest, fibonacciTest){
   number = mathUtilsObj.getNthFibonacciNumSeq(12);
   EXPECT_TRUE(number == 144);
   number = mathUtilsObj.getNthFibonacciNumSeq(22);
+}
+
+// Test the factorial functions
+TEST_F(MathUtilsTest, factorialTest){
+  // about as big as the function can handle
+  int number = mathUtilsObj.getNthFactorialRec(9);
+  EXPECT_TRUE(number = 362880);
+
+  // about as big as the function can handle
+  number = mathUtilsObj.getNthFactorialSeq(9);
+  EXPECT_TRUE(number = 362880);
 }
 
 } // utils end
