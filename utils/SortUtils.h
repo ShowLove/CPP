@@ -59,7 +59,7 @@ class SortUtils
    * @param the size of the array
    * @param returns true if it is sorted, false otherwise
    */
-  bool SimpleIsSorted(const int* array, int size);
+  bool isSorted(const int* array, int size);
 
   /*************************************************
    * my sort functions
@@ -68,8 +68,8 @@ class SortUtils
   void insertionSort(int *array, int arraySize);
   void selectionSort(int *array, int arraySize); 
   void bubbleSort(int *array, int arraySize);
-  void MergeSort(int *pInArray, int nSize);
-  void Merge(int *pInArray, int nLeftSize, int nRightSize);
+  void mergeSort(int *pInArray, int nSize);
+  void merge(int *pInArray, int nLeftSize, int nRightSize);
   ////////HELPER FUNCTIONS//////////////
   void swap(int *array, int index );
   void printArray(int *array, int arraySize);

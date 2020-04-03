@@ -3,7 +3,7 @@
 namespace utils
 {
 
-bool SortUtils::SimpleIsSorted(const int *array, int size) {
+bool SortUtils::isSorted(const int *array, int size) {
 
   if (size == 0)
     return true;   // Edge case
@@ -72,7 +72,7 @@ void SortUtils::bubbleSort(int *array, int arraySize) //best arraySize, Worst ar
     }
 }
 
-void SortUtils::Merge(int *pInArray, int nLeftSize, int nRightSize)
+void SortUtils::merge(int *pInArray, int nLeftSize, int nRightSize)
 {
   //int *pTemp = malloc( sizeof(int)*(nLeftSize + nRightSize) );
   int *pTemp = new int[nLeftSize + nRightSize];
@@ -103,7 +103,7 @@ void SortUtils::Merge(int *pInArray, int nLeftSize, int nRightSize)
   //free(pTemp);
 }
 
-void SortUtils::MergeSort(int *pInArray, int nSize)
+void SortUtils::mergeSort(int *pInArray, int nSize)
 {
   if (nSize <= 1)
   {
@@ -112,9 +112,9 @@ void SortUtils::MergeSort(int *pInArray, int nSize)
 
   int nLeftSize = nSize / 2;
   int nRightSize = nSize - nLeftSize;
-  MergeSort(pInArray, nLeftSize);
-  MergeSort(&pInArray[nLeftSize], nRightSize);
-  Merge(pInArray, nLeftSize, nRightSize);
+  mergeSort(pInArray, nLeftSize);
+  mergeSort(&pInArray[nLeftSize], nRightSize);
+  merge(pInArray, nLeftSize, nRightSize);
 }
 
 //////////////////////HELPER_FUNCTIONS//////////////////////
