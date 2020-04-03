@@ -26,6 +26,18 @@ class MathUtils
    */
   int nThPrime(int n) const;
 
+  /* Gets the Nth finonacci number using recursion
+   * @param nThNum nth number in the fibonacci sequence
+   * @return fibonacci number n
+   */
+  int getNthFibonacciNumRec(const int nthNum ) const;
+
+  /* Gets the Nth finonacci number using sequential logic
+   * @param nThNum nth number in the fibonacci sequence
+   * @return fibonacci number n
+   */
+  int getNthFibonacciNumSeq(const int nthNum ) const;
+
   ~MathUtils(){}
 
  private:

@@ -52,4 +52,45 @@ TEST_F(MathUtilsTest, nThPrimeTest){
   EXPECT_FALSE(mathUtilsObj.nThPrime(-UtilConst::ten));
 }
 
+// Test fibonacci functions
+TEST_F(MathUtilsTest, fibonacciTest){
+
+  int number = mathUtilsObj.getNthFibonacciNumRec(0);
+
+  // Using recursive function
+  EXPECT_TRUE(number == 0);
+  number = mathUtilsObj.getNthFibonacciNumRec(1);
+  EXPECT_TRUE(number == 1);
+  number = mathUtilsObj.getNthFibonacciNumRec(2);
+  EXPECT_TRUE(number == 1);
+  number = mathUtilsObj.getNthFibonacciNumRec(3);
+  EXPECT_TRUE(number == 2);
+  number = mathUtilsObj.getNthFibonacciNumRec(4);
+  EXPECT_TRUE(number == 3);
+  number = mathUtilsObj.getNthFibonacciNumRec(5);
+  EXPECT_TRUE(number == 5);
+  number = mathUtilsObj.getNthFibonacciNumRec(12);
+  EXPECT_TRUE(number == 144);
+  number = mathUtilsObj.getNthFibonacciNumRec(22);
+  EXPECT_TRUE(number == 17711);
+
+
+  // Using seq function
+  number = mathUtilsObj.getNthFibonacciNumSeq(0);
+  EXPECT_TRUE(number == 0);
+  number = mathUtilsObj.getNthFibonacciNumSeq(1);
+  EXPECT_TRUE(number == 1);
+  number = mathUtilsObj.getNthFibonacciNumSeq(2);
+  EXPECT_TRUE(number == 1);
+  number = mathUtilsObj.getNthFibonacciNumSeq(3);
+  EXPECT_TRUE(number == 2);
+  number = mathUtilsObj.getNthFibonacciNumSeq(4);
+  EXPECT_TRUE(number == 3);
+  number = mathUtilsObj.getNthFibonacciNumSeq(5);
+  EXPECT_TRUE(number == 5);
+  number = mathUtilsObj.getNthFibonacciNumSeq(12);
+  EXPECT_TRUE(number == 144);
+  number = mathUtilsObj.getNthFibonacciNumSeq(22);
+}
+
 } // utils end
