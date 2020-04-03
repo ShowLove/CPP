@@ -152,6 +152,33 @@ AsciiUtilsTest.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.s
 .PHONY : AsciiUtilsTest.cpp.s
 
+DataStructureUtilsTest.o: DataStructureUtilsTest.cpp.o
+
+.PHONY : DataStructureUtilsTest.o
+
+# target to build an object file
+DataStructureUtilsTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/DataStructureUtilsTest.cpp.o
+.PHONY : DataStructureUtilsTest.cpp.o
+
+DataStructureUtilsTest.i: DataStructureUtilsTest.cpp.i
+
+.PHONY : DataStructureUtilsTest.i
+
+# target to preprocess a source file
+DataStructureUtilsTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/DataStructureUtilsTest.cpp.i
+.PHONY : DataStructureUtilsTest.cpp.i
+
+DataStructureUtilsTest.s: DataStructureUtilsTest.cpp.s
+
+.PHONY : DataStructureUtilsTest.s
+
+# target to generate assembly for a file
+DataStructureUtilsTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/DataStructureUtilsTest.cpp.s
+.PHONY : DataStructureUtilsTest.cpp.s
+
 MathUtilsTest.o: MathUtilsTest.cpp.o
 
 .PHONY : MathUtilsTest.o
@@ -286,6 +313,33 @@ __/AsciiUtils.s: __/AsciiUtils.cpp.s
 __/AsciiUtils.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.s
 .PHONY : __/AsciiUtils.cpp.s
+
+__/DataStructureUtils.o: __/DataStructureUtils.cpp.o
+
+.PHONY : __/DataStructureUtils.o
+
+# target to build an object file
+__/DataStructureUtils.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/DataStructureUtils.cpp.o
+.PHONY : __/DataStructureUtils.cpp.o
+
+__/DataStructureUtils.i: __/DataStructureUtils.cpp.i
+
+.PHONY : __/DataStructureUtils.i
+
+# target to preprocess a source file
+__/DataStructureUtils.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/DataStructureUtils.cpp.i
+.PHONY : __/DataStructureUtils.cpp.i
+
+__/DataStructureUtils.s: __/DataStructureUtils.cpp.s
+
+.PHONY : __/DataStructureUtils.s
+
+# target to generate assembly for a file
+__/DataStructureUtils.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/DataStructureUtils.cpp.s
+.PHONY : __/DataStructureUtils.cpp.s
 
 __/MathUtils.o: __/MathUtils.cpp.o
 
@@ -434,6 +488,9 @@ help:
 	@echo "... AsciiUtilsTest.o"
 	@echo "... AsciiUtilsTest.i"
 	@echo "... AsciiUtilsTest.s"
+	@echo "... DataStructureUtilsTest.o"
+	@echo "... DataStructureUtilsTest.i"
+	@echo "... DataStructureUtilsTest.s"
 	@echo "... MathUtilsTest.o"
 	@echo "... MathUtilsTest.i"
 	@echo "... MathUtilsTest.s"
@@ -449,6 +506,9 @@ help:
 	@echo "... __/AsciiUtils.o"
 	@echo "... __/AsciiUtils.i"
 	@echo "... __/AsciiUtils.s"
+	@echo "... __/DataStructureUtils.o"
+	@echo "... __/DataStructureUtils.i"
+	@echo "... __/DataStructureUtils.s"
 	@echo "... __/MathUtils.o"
 	@echo "... __/MathUtils.i"
 	@echo "... __/MathUtils.s"

@@ -10,6 +10,12 @@
 iostream
 -
 
+../..//DataStructureUtils.h
+iostream
+-
+stdlib.h
+../../stdlib.h
+
 ../..//MathUtils.h
 iostream
 -
@@ -43,6 +49,16 @@ AsciiUtils.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/AsciiUtils.h
 iostream
 -
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/DataStructureUtils.cpp
+DataStructureUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/DataStructureUtils.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/DataStructureUtils.h
+iostream
+-
+stdlib.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/stdlib.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/MathUtils.cpp
 MathUtils.h
@@ -93,6 +109,12 @@ AsciiUtils.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtils.h
 UtilConst.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/UtilConst.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/DataStructureUtilsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
+DataStructureUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/DataStructureUtils.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/MathUtilsTest.cpp
 gtest/gtest.h

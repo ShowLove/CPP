@@ -1,9 +1,9 @@
 #include "gtest/gtest.h"
 
-#include "SortUtils.h" // for getArrayRandom
+#include "SortUtils.h" // for getArrayRandom, printArray
 #include "SearchUtils.h"
 
-#define PRINT_SEARCH_DEBUG 1
+#define PRINT_SEARCH_DEBUG 0
 
 namespace utils
 {
