@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/cStringUtils.cpp
+cStringUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/cStringUtils.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/cStringUtils.h
+iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/cStringUtilsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
+cStringUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/cStringUtils.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtestsMain.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
+cStringUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/cStringUtils.h
+
+cStringUtils.h
+iostream
+-
+

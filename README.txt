@@ -15,5 +15,8 @@ g++ main.cpp cStringUtils.cpp -o cStringUtils.out && ./cStringUtils.out
 cd /Users/carlosgarzon/Desktop/code/cpp98/tests
 g++ -lgtest firstTest.cpp -o firstTest.out
 
-/* run gtests for utils */
+/* compile code and run gtests for utils */
 cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/ && cmake /Users/carlosgarzon/Desktop/code/cpp98/utils && make && ./tests/gtestProject
+
+/* compile code and run gtests for codeQs */
+cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && cmake /Users/carlosgarzon/Desktop/code/cpp98/codeQs && make && ./tests/gtestProject

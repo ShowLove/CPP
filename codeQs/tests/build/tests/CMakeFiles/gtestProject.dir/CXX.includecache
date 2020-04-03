@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../..//StrHasUniqueChars.h
+iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.cpp
+StrHasUniqueChars.h
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.h
+iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueCharsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtest/gtest.h
+StrHasUniqueChars.h
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueChars.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtestsMain.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtest/gtest.h
+
