@@ -177,9 +177,33 @@ tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o.provides: tests/CMakeFiles/
 tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o
 
 
+tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
+tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o: ../../SearchUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/utils/SearchUtils.cpp
+
+tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.i"
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp98/utils/SearchUtils.cpp > CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.i
+
+tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.s"
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp98/utils/SearchUtils.cpp -o CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.s
+
+tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.requires:
+
+.PHONY : tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.requires
+
+tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.provides: tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.provides
+
+tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o
+
+
 tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o: ../StringUtilsCTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/StringUtilsCTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.i: cmake_force
@@ -203,7 +227,7 @@ tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o.provides.build: tests/C
 
 tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o: ../SortUtilsTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtilsTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.i: cmake_force
@@ -227,7 +251,7 @@ tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o.provides.build: tests/CMak
 
 tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o: ../AsciiUtilsTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/AsciiUtilsTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.i: cmake_force
@@ -251,7 +275,7 @@ tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o.provides.build: tests/CMa
 
 tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o: ../MathUtilsTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/MathUtilsTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.i: cmake_force
@@ -273,6 +297,30 @@ tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o.provides: tests/CMakeFiles
 tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o
 
 
+tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
+tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o: ../SearchUtilsTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SearchUtilsTest.cpp
+
+tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.i"
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SearchUtilsTest.cpp > CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.i
+
+tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.s"
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SearchUtilsTest.cpp -o CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.s
+
+tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.requires:
+
+.PHONY : tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.requires
+
+tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.provides: tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.provides
+
+tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o
+
+
 # Object files for target gtestProject
 gtestProject_OBJECTS = \
 "CMakeFiles/gtestProject.dir/gtestsMain.cpp.o" \
@@ -280,10 +328,12 @@ gtestProject_OBJECTS = \
 "CMakeFiles/gtestProject.dir/__/SortUtils.cpp.o" \
 "CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.o" \
 "CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o" \
+"CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o" \
 "CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o" \
 "CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o" \
 "CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o" \
-"CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o"
+"CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o" \
+"CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o"
 
 # External object files for target gtestProject
 gtestProject_EXTERNAL_OBJECTS =
@@ -293,13 +343,15 @@ tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/StringUtils_c.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o
+tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o
+tests/gtestProject: tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/build.make
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable gtestProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable gtestProject"
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtestProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -312,10 +364,12 @@ tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/SortUtils.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/AsciiUtils.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.o.requires
+tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/StringUtilsCTest.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/SortUtilsTest.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/AsciiUtilsTest.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.o.requires
+tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o.requires
 
 .PHONY : tests/CMakeFiles/gtestProject.dir/requires
 

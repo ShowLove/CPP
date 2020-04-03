@@ -87,6 +87,9 @@ TEST_F(SortUtilsTest, allSortsTest){
 
   int arraySize = 10, upperBound = 100;
   int* array = sortUtilsObject.getArrayRandom(arraySize, upperBound);
+#if PRINT_SORT_DEBUG
+  sortUtilsObject.printArray(array, arraySize);
+#endif
 
   //insertionSort test
   sortUtilsObject.insertionSort(array, arraySize);

@@ -179,6 +179,33 @@ MathUtilsTest.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/MathUtilsTest.cpp.s
 .PHONY : MathUtilsTest.cpp.s
 
+SearchUtilsTest.o: SearchUtilsTest.cpp.o
+
+.PHONY : SearchUtilsTest.o
+
+# target to build an object file
+SearchUtilsTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.o
+.PHONY : SearchUtilsTest.cpp.o
+
+SearchUtilsTest.i: SearchUtilsTest.cpp.i
+
+.PHONY : SearchUtilsTest.i
+
+# target to preprocess a source file
+SearchUtilsTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.i
+.PHONY : SearchUtilsTest.cpp.i
+
+SearchUtilsTest.s: SearchUtilsTest.cpp.s
+
+.PHONY : SearchUtilsTest.s
+
+# target to generate assembly for a file
+SearchUtilsTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/SearchUtilsTest.cpp.s
+.PHONY : SearchUtilsTest.cpp.s
+
 SortUtilsTest.o: SortUtilsTest.cpp.o
 
 .PHONY : SortUtilsTest.o
@@ -287,6 +314,33 @@ __/MathUtils.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/MathUtils.cpp.s
 .PHONY : __/MathUtils.cpp.s
 
+__/SearchUtils.o: __/SearchUtils.cpp.o
+
+.PHONY : __/SearchUtils.o
+
+# target to build an object file
+__/SearchUtils.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.o
+.PHONY : __/SearchUtils.cpp.o
+
+__/SearchUtils.i: __/SearchUtils.cpp.i
+
+.PHONY : __/SearchUtils.i
+
+# target to preprocess a source file
+__/SearchUtils.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.i
+.PHONY : __/SearchUtils.cpp.i
+
+__/SearchUtils.s: __/SearchUtils.cpp.s
+
+.PHONY : __/SearchUtils.s
+
+# target to generate assembly for a file
+__/SearchUtils.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/SearchUtils.cpp.s
+.PHONY : __/SearchUtils.cpp.s
+
 __/SortUtils.o: __/SortUtils.cpp.o
 
 .PHONY : __/SortUtils.o
@@ -383,6 +437,9 @@ help:
 	@echo "... MathUtilsTest.o"
 	@echo "... MathUtilsTest.i"
 	@echo "... MathUtilsTest.s"
+	@echo "... SearchUtilsTest.o"
+	@echo "... SearchUtilsTest.i"
+	@echo "... SearchUtilsTest.s"
 	@echo "... SortUtilsTest.o"
 	@echo "... SortUtilsTest.i"
 	@echo "... SortUtilsTest.s"
@@ -395,6 +452,9 @@ help:
 	@echo "... __/MathUtils.o"
 	@echo "... __/MathUtils.i"
 	@echo "... __/MathUtils.s"
+	@echo "... __/SearchUtils.o"
+	@echo "... __/SearchUtils.i"
+	@echo "... __/SearchUtils.s"
 	@echo "... __/SortUtils.o"
 	@echo "... __/SortUtils.i"
 	@echo "... __/SortUtils.s"

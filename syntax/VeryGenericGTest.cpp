@@ -1,17 +1,17 @@
 #include "gtest/gtest.h"
-#include "StringUtils_c.h"
+#include "SortUtils.h"
 
-#define PRINT_ASCII_DEBUG 0
+#define PRINT_SEARCH_DEBUG 0
 
 namespace utils
 {
 
-class StringUtilsCTest : public ::testing::Test {
+class FooTest : public ::testing::Test {
 
  public:
 
-  StringUtilsCTest() {}
-  ~StringUtilsCTest(){}
+  FooTest() {}
+  ~FooTest(){}
 
  protected:
   virtual void SetUp() 
@@ -24,17 +24,11 @@ class StringUtilsCTest : public ::testing::Test {
 
   }
   
-  StringUtilsC sUtilObj;
+  //Foo fooObj;
 };
 
-// Test that we can recieve dynamic length prompt input 
-TEST_F(StringUtilsCTest, prompAndAlocStringDynamicallyTest){
+TEST_F(FooTest, foo){
   
-#if PRINT_ASCII_DEBUG
-  printf("\n stringLength(%d) \n", length);
-#endif
-
-  EXPECT_TRUE(1 > 0);
 }
 
 } // utils end

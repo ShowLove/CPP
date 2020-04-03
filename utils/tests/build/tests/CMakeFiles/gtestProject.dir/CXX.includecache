@@ -14,6 +14,12 @@ iostream
 iostream
 -
 
+../..//SearchUtils.h
+iostream
+-
+stdlib.h
+-
+
 ../..//SortUtils.h
 iostream
 -
@@ -46,6 +52,16 @@ UtilConst.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/MathUtils.h
 iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/SearchUtils.cpp
+SearchUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/SearchUtils.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/SearchUtils.h
+iostream
+-
+stdlib.h
 -
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/SortUtils.cpp
@@ -85,6 +101,14 @@ MathUtils.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/MathUtils.h
 UtilConst.h
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/UtilConst.h
+
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SearchUtilsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/gtest/gtest.h
+SortUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtils.h
+SearchUtils.h
+/Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SearchUtils.h
 
 /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/SortUtilsTest.cpp
 gtest/gtest.h

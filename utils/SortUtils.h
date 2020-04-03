@@ -74,7 +74,7 @@ class SortUtils
   void swap(int *array, int index );
   void printArray(int *array, int arraySize);
   void rePolute(int *array, int arraySize);
-  int *getArrayRandom(int arraySize, int upperBounds);
+  int *getArrayRandom(int arraySize, int upperBounds); // user must: delet[] array
   void randomizeArray(int* array, int arraySize, int upperBounds);
  private:
 
