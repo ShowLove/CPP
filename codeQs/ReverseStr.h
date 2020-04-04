@@ -3,18 +3,18 @@
 
 #include <iostream>
 
-namespace utils
+namespace fooNameSpace
 {
 
-class AsciiUtils
+class Foo
 {
  public:
 
-  AsciiUtils(){}// Default constructor
+  Foo(){}// Default constructor
   
   void fooFunction();
 
-  ~AsciiUtils(){}
+  ~Foo(){}
 
  private:
 };
