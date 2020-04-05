@@ -1,13 +1,5 @@
 import shutil # to copy files
-import os     # to change directories using os
-
-repoName   = "codeQs"
-headerFile = "Foo.h"
-srcFile    = "Foo.cpp"
-testFile   = "FooTest.cpp"
-#name of new class
-className  = "ReverseStr"
-pathToTopLevlDir = "../../"
+import os     # to change directories using os 
 
 ##########################################
 # assuming the following folder structure
@@ -16,67 +8,98 @@ pathToTopLevlDir = "../../"
 # topDir -> repo2
 ##########################################
 
-# get script directory
-pythonDir = os.getcwd()
-print("scriptDir:" + "\t\t" + pythonDir)
+class copyFiles(object):
 
-# get top level directory
-os.chdir(pathToTopLevlDir)
-topLevelDir = os.getcwd()
-print("topLevelDir:" + "\t\t" + topLevelDir)
+  def __init__(self):
+    self.fooVar = 2
+    self.repoName   = "codeQs"
+    self.headerFile = "Foo.h"
+    self.srcFile    = "Foo.cpp"
+    self.testFile   = "FooTest.cpp"
+    #name of new class
+    self.className  = "ReverseStr"
+    self.pathToTopLevlDir = "../../"
 
-# get repo directory
-os.chdir('codeQs')
-repoDir = os.getcwd()
-print("repoDir:" + "\t\t" + repoDir)
+  def getSriptDir(self):
+    # get script directory
+    pythonDir = os.getcwd()
+    print("scriptDir:" + "\t\t" + pythonDir)
+    return pythonDir
 
-# get test directory
-os.chdir('tests')
-testDir = os.getcwd()
-print("testDir:" + "\t\t" + repoDir)
+  def getTopLevelDir(self):
+    # get top level directory
+    os.chdir(self.pathToTopLevlDir)
+    topLevelDir = os.getcwd()
+    print("topLevelDir:" + "\t\t" + topLevelDir)
+    return topLevelDir
 
-# get generic code directory
-os.chdir(topLevelDir)
-os.chdir('syntax/codeTemplate')
-templateCodeDir = os.getcwd()
-print("templateCodeDir:" + "\t" + templateCodeDir)
+  def getRepoDir(self):
+    # get repo directory
+    os.chdir('codeQs')
+    repoDir = os.getcwd()
+    print("repoDir:" + "\t\t" + repoDir)
+    return repoDir
+
+  def getTestDir(self):
+    # get test directory
+    os.chdir('tests')
+    testDir = os.getcwd()
+    print("testDir:" + "\t\t" + repoDir)
+    return testDir
+
+  def getGenericCodeDir(self, topLevelDir):
+    # get generic code directory
+    os.chdir(topLevelDir)
+    os.chdir('syntax/codeTemplate')
+    templateCodeDir = os.getcwd()
+    print("templateCodeDir:" + "\t" + templateCodeDir)
+    return templateCodeDir
+
+  def fileExists(self, path):
+    if os.path.isfile(path):
+        print ("Successfuly created:\t\t" + path)
+    else:
+        print ("Failed to create:\t\t" + path)    
+
+###################################
+# Run the code
+##################################
+print("Copy Files Script: \n")
+
+obj = copyFiles()
+
+pythonDir   = obj.getSriptDir()
+topLevelDir = obj.getTopLevelDir()
+repoDir     = obj.getRepoDir()
+testDir     = obj.getTestDir()
+templateCodeDir = obj.getGenericCodeDir(topLevelDir)
 
 # Choose your source and destination directory
 sourceDir = templateCodeDir
 dstDir    = repoDir
 
 # Chose your srouce files
-sourceHeader = sourceDir + "/" + headerFile
-sourceSrc    = sourceDir + "/" + srcFile
-sourceTest   = sourceDir + "/" + testFile
+sourceHeader = sourceDir + "/" + obj.headerFile
+sourceSrc    = sourceDir + "/" + obj.srcFile
+sourceTest   = sourceDir + "/" + obj.testFile
 
 # Chose your destination files
-dstHeader    = dstDir  + "/" + className + ".h"
-dstSrc       = dstDir  + "/" + className + ".cpp"
-dstTest      = testDir + "/" + className + "Test.cpp"
+dstHeader    = dstDir  + "/" + obj.className + ".h"
+dstSrc       = dstDir  + "/" + obj.className + ".cpp"
+dstTest      = testDir + "/" + obj.className + "Test.cpp"
 
 print("\nmoving: \n" + sourceHeader + "\n"+ sourceSrc + "\n"+ sourceTest + "\n")
 print("to: \n" + dstHeader + "\n"+ dstSrc + "\n"+ dstTest + "\n")
 
-
+# Copy files over
 shutil.copy(sourceHeader, dstHeader)
 shutil.copy(sourceSrc, dstSrc)
 shutil.copy(sourceTest, dstTest)
 
-if os.path.isfile(dstHeader):
-    print ("Successfuly created:\t\t" + dstHeader)
-else:
-    print ("Failed to create:\t\t" + dstHeader)
-
-if os.path.isfile(dstSrc):
-    print ("Successfuly created:\t\t" + dstSrc)
-else:
-    print ("Failed to create:\t\t" + dstSrc)
-
-if os.path.isfile(dstTest):
-    print ("Successfuly created:\t\t" + dstTest)
-else:
-    print ("Failed to create:\t\t" + dstTest)
+# Check that all files are there
+obj.fileExists(dstHeader)
+obj.fileExists(dstSrc)
+obj.fileExists(dstTest)
 
 
 
