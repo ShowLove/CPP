@@ -3,15 +3,15 @@
 
 #define PRINT_SEARCH_DEBUG 0
 
-namespace utils
+namespace codeQs
 {
 
-class FooTest : public ::testing::Test {
+class ReverseStrTest : public ::testing::Test {
 
  public:
 
-  FooTest() {}
-  ~FooTest(){}
+  ReverseStrTest() {}
+  ~ReverseStrTest(){}
 
  protected:
   virtual void SetUp() 
@@ -24,10 +24,10 @@ class FooTest : public ::testing::Test {
 
   }
   
-  //Foo fooObj;
+  //ReverseStr fooObj;
 };
 
-TEST_F(FooTest, foo){
+TEST_F(ReverseStrTest, foo){
   
 }
 

@@ -3,7 +3,7 @@
 
 #define PRINT_SEARCH_DEBUG 0
 
-namespace utils
+namespace fooNameSpace
 {
 
 class FooTest : public ::testing::Test {

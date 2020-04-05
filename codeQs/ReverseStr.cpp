@@ -1,11 +1,11 @@
-#include "Foo.h"
+#include "ReverseStr.h"
 
-namespace fooNameSpace
+namespace codeQs
 {
 
-void Foo::fooFunction()
+void ReverseStr::fooFunction()
 {
   std::cout << "test was successfull" << std::endl;
 }
   
-} // fooNameSpace end
+} // codeQs end

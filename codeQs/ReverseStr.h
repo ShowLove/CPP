@@ -3,22 +3,22 @@
 
 #include <iostream>
 
-namespace fooNameSpace
+namespace codeQs
 {
 
-class Foo
+class ReverseStr
 {
  public:
 
-  Foo(){}// Default constructor
+  ReverseStr(){}// Default constructor
   
   void fooFunction();
 
-  ~Foo(){}
+  ~ReverseStr(){}
 
  private:
 };
 
-} //fooNameSpace end
+} //codeQs end
 
 #endif
