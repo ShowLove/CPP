@@ -123,8 +123,8 @@ class copyFiles(object):
 # Run the code
 ##################################
 #if self.printDebug : print("Copy Files Script: \n")
-obj = copyFiles()
-obj.moveFiles()
+#obj = copyFiles()
+#obj.moveFiles()
 
 
 

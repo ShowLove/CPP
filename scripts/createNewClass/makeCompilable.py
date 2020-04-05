@@ -1,9 +1,9 @@
 import copyFiles
 
-class MakeCompilable(object):
+class makeCompilable(object):
 
   def __init__(self):
-    self.printDebug  = True
+    self.printDebug  = False
     self.cf = copyFiles.copyFiles() #import.class
     self.className =  self.cf.getClassName()
     self.nameSpace  = self.cf.getNameSpace()
@@ -80,12 +80,12 @@ class MakeCompilable(object):
 ###################################
 # Run the code
 ##################################
-obj = MakeCompilable()
-obj.updateHeaderClassName()
-obj.updateSourceClassName()
-obj.updateTestClassName()
-obj.updateNameSpace()
-obj.updateCmake(obj.className)
+#obj = makeCompilable()
+#obj.updateHeaderClassName()
+#obj.updateSourceClassName()
+#obj.updateTestClassName()
+#obj.updateNameSpace()
+#obj.updateCmake(obj.className)
 
 
 
