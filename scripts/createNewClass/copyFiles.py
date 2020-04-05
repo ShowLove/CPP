@@ -3,8 +3,7 @@ import os     # to change directories using os
 
 # TODO
 # 1 should be only one getDir function
-# 2 add conditional parameters
-# 3 make file paths adjustable easily
+# 2 add conditional parameters (className, namespace)
 
 ##########################################
 # assuming the following folder structure
@@ -26,6 +25,14 @@ class copyFiles(object):
     #name of new class
     self.className  = "ReverseStr"
     self.pathToTopLevlDir = "../../"
+    self.pathToScriptDir  = "/scripts/createNewClass/"
+    self.pathToRepoDir    = "/codeQs/"
+    self.pathToTestDir    = "/codeQs/tests/"
+    self.pathToGenericCodeDir = "/syntax/codeTemplate/"
+    self.topLevelDir = self.getTopLevelDir()
+
+  def getFullPathName(self, dirPath):
+    return self.topLevelDir + dirPath
 
   def getSriptDir(self):
     # get script directory
@@ -35,64 +42,48 @@ class copyFiles(object):
 
   def getTopLevelDir(self):
     # get top level directory
+    scriptDir = os.getcwd()
     os.chdir(self.pathToTopLevlDir)
     topLevelDir = os.getcwd()
+    # return to script dir and return top level dir
+    os.chdir(scriptDir)
     if self.printDebug : print("topLevelDir:" + "\t\t" + topLevelDir)
     return topLevelDir
 
   def getRepoDir(self):
     # get repo directory
-    os.chdir('codeQs')
-    repoDir = os.getcwd()
+    repoDir = self.getFullPathName(self.pathToRepoDir)
     if self.printDebug : print("repoDir:" + "\t\t" + repoDir)
     return repoDir
 
   def getTestDir(self):
     # get test directory
-    os.chdir('tests')
-    testDir = os.getcwd()
+    testDir = self.getFullPathName(self.pathToTestDir)
     if self.printDebug : print("testDir:" + "\t\t" + testDir)
     return testDir
 
-  def getGenericCodeDir(self, topLevelDir):
+  def getGenericCodeDir(self):
     # get generic code directory
-    os.chdir(topLevelDir)
-    os.chdir('syntax/codeTemplate')
-    templateCodeDir = os.getcwd()
+    templateCodeDir = self.getFullPathName(self.pathToGenericCodeDir)
     if self.printDebug : print("templateCodeDir:" + "\t" + templateCodeDir)
     return templateCodeDir
 
   def getSourceDirs(self):
-    # Get all relevant directories
-    pythonDir   = self.getSriptDir()
-    topLevelDir = self.getTopLevelDir()
-    repoDir     = self.getRepoDir()
-    testDir     = self.getTestDir()
-    templateCodeDir = self.getGenericCodeDir(topLevelDir)
-
-    # Final destination path + fileName
-    sourceDir = templateCodeDir
+    # Get all relevant directories (path + fileName)
+    sourceDir = self.getGenericCodeDir()
     sourceHeader = sourceDir + "/" + self.headerFile
     sourceSrc    = sourceDir + "/" + self.srcFile
     sourceTest   = sourceDir + "/" + self.testFile
-
     #return the directories that will be used by shutil
     return sourceHeader, sourceSrc, sourceTest  
 
   def getDstDirs(self):
-    # Get all relevant directories
-    pythonDir   = self.getSriptDir()
-    topLevelDir = self.getTopLevelDir()
-    repoDir     = self.getRepoDir()
-    testDir     = self.getTestDir()
-    templateCodeDir = self.getGenericCodeDir(topLevelDir)
-
-    # Choose your source and destination directory
-    dstDir = repoDir
+    # Get all relevant directories (path + fileName)
+    dstDir   = self.getRepoDir()
+    testDir  = self.getTestDir()
     dstHeader    = dstDir  + "/" + self.className + ".h"
     dstSrc       = dstDir  + "/" + self.className + ".cpp"
     dstTest      = testDir + "/" + self.className + "Test.cpp"
-
     #return the directories that will be used by shutil
     return dstHeader, dstSrc, dstTest
 
@@ -132,8 +123,8 @@ class copyFiles(object):
 # Run the code
 ##################################
 #if self.printDebug : print("Copy Files Script: \n")
-#obj = copyFiles()
-#obj.moveFiles()
+obj = copyFiles()
+obj.moveFiles()
 
 
 

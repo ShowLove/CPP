@@ -48,10 +48,10 @@ RM = /usr/local/mac-dev-env/cmake-3.9.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/carlosgarzon/Desktop/code/cpp98/codeQs
+CMAKE_SOURCE_DIR = /Users/carlosgarzon/Desktop/code/cpp/codeQs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build
+CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/CMakeFiles /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests/CMakeFiles/progress.marks
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/CMakeFiles 0
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests/CMakeFiles/progress.marks
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,22 +97,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 tests/CMakeFiles/gtestProject.dir/rule:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/gtestProject.dir/rule
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f CMakeFiles/Makefile2 tests/CMakeFiles/gtestProject.dir/rule
 .PHONY : tests/CMakeFiles/gtestProject.dir/rule
 
 # Convenience name for target.
@@ -122,8 +122,35 @@ gtestProject: tests/CMakeFiles/gtestProject.dir/rule
 
 # fast build rule for target.
 gtestProject/fast:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/build
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/build
 .PHONY : gtestProject/fast
+
+ReverseStrTest.o: ReverseStrTest.cpp.o
+
+.PHONY : ReverseStrTest.o
+
+# target to build an object file
+ReverseStrTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o
+.PHONY : ReverseStrTest.cpp.o
+
+ReverseStrTest.i: ReverseStrTest.cpp.i
+
+.PHONY : ReverseStrTest.i
+
+# target to preprocess a source file
+ReverseStrTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.i
+.PHONY : ReverseStrTest.cpp.i
+
+ReverseStrTest.s: ReverseStrTest.cpp.s
+
+.PHONY : ReverseStrTest.s
+
+# target to generate assembly for a file
+ReverseStrTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.s
+.PHONY : ReverseStrTest.cpp.s
 
 StrHasUniqueCharsTest.o: StrHasUniqueCharsTest.cpp.o
 
@@ -131,7 +158,7 @@ StrHasUniqueCharsTest.o: StrHasUniqueCharsTest.cpp.o
 
 # target to build an object file
 StrHasUniqueCharsTest.cpp.o:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o
 .PHONY : StrHasUniqueCharsTest.cpp.o
 
 StrHasUniqueCharsTest.i: StrHasUniqueCharsTest.cpp.i
@@ -140,7 +167,7 @@ StrHasUniqueCharsTest.i: StrHasUniqueCharsTest.cpp.i
 
 # target to preprocess a source file
 StrHasUniqueCharsTest.cpp.i:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.i
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.i
 .PHONY : StrHasUniqueCharsTest.cpp.i
 
 StrHasUniqueCharsTest.s: StrHasUniqueCharsTest.cpp.s
@@ -149,8 +176,35 @@ StrHasUniqueCharsTest.s: StrHasUniqueCharsTest.cpp.s
 
 # target to generate assembly for a file
 StrHasUniqueCharsTest.cpp.s:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.s
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.s
 .PHONY : StrHasUniqueCharsTest.cpp.s
+
+__/ReverseStr.o: __/ReverseStr.cpp.o
+
+.PHONY : __/ReverseStr.o
+
+# target to build an object file
+__/ReverseStr.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o
+.PHONY : __/ReverseStr.cpp.o
+
+__/ReverseStr.i: __/ReverseStr.cpp.i
+
+.PHONY : __/ReverseStr.i
+
+# target to preprocess a source file
+__/ReverseStr.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.i
+.PHONY : __/ReverseStr.cpp.i
+
+__/ReverseStr.s: __/ReverseStr.cpp.s
+
+.PHONY : __/ReverseStr.s
+
+# target to generate assembly for a file
+__/ReverseStr.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.s
+.PHONY : __/ReverseStr.cpp.s
 
 __/StrHasUniqueChars.o: __/StrHasUniqueChars.cpp.o
 
@@ -158,7 +212,7 @@ __/StrHasUniqueChars.o: __/StrHasUniqueChars.cpp.o
 
 # target to build an object file
 __/StrHasUniqueChars.cpp.o:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o
 .PHONY : __/StrHasUniqueChars.cpp.o
 
 __/StrHasUniqueChars.i: __/StrHasUniqueChars.cpp.i
@@ -167,7 +221,7 @@ __/StrHasUniqueChars.i: __/StrHasUniqueChars.cpp.i
 
 # target to preprocess a source file
 __/StrHasUniqueChars.cpp.i:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.i
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.i
 .PHONY : __/StrHasUniqueChars.cpp.i
 
 __/StrHasUniqueChars.s: __/StrHasUniqueChars.cpp.s
@@ -176,7 +230,7 @@ __/StrHasUniqueChars.s: __/StrHasUniqueChars.cpp.s
 
 # target to generate assembly for a file
 __/StrHasUniqueChars.cpp.s:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s
 .PHONY : __/StrHasUniqueChars.cpp.s
 
 gtestsMain.o: gtestsMain.cpp.o
@@ -185,7 +239,7 @@ gtestsMain.o: gtestsMain.cpp.o
 
 # target to build an object file
 gtestsMain.cpp.o:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
 .PHONY : gtestsMain.cpp.o
 
 gtestsMain.i: gtestsMain.cpp.i
@@ -194,7 +248,7 @@ gtestsMain.i: gtestsMain.cpp.i
 
 # target to preprocess a source file
 gtestsMain.cpp.i:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.i
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.i
 .PHONY : gtestsMain.cpp.i
 
 gtestsMain.s: gtestsMain.cpp.s
@@ -203,7 +257,7 @@ gtestsMain.s: gtestsMain.cpp.s
 
 # target to generate assembly for a file
 gtestsMain.cpp.s:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
 .PHONY : gtestsMain.cpp.s
 
 # Help Target
@@ -215,9 +269,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... gtestProject"
+	@echo "... ReverseStrTest.o"
+	@echo "... ReverseStrTest.i"
+	@echo "... ReverseStrTest.s"
 	@echo "... StrHasUniqueCharsTest.o"
 	@echo "... StrHasUniqueCharsTest.i"
 	@echo "... StrHasUniqueCharsTest.s"
+	@echo "... __/ReverseStr.o"
+	@echo "... __/ReverseStr.i"
+	@echo "... __/ReverseStr.s"
 	@echo "... __/StrHasUniqueChars.o"
 	@echo "... __/StrHasUniqueChars.i"
 	@echo "... __/StrHasUniqueChars.s"
@@ -235,6 +295,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

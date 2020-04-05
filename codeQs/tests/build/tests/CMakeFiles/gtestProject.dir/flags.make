@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=gnu++98
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/carlosgarzon/Desktop/code/cpp98/codeQs -I/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests -I/usr/local/Cellar/gtest/include -I/usr/local/Cellar/gtest/lib 
+CXX_INCLUDES = -I/Users/carlosgarzon/Desktop/code/cpp/codeQs -I/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests -I/usr/local/Cellar/gtest/include -I/usr/local/Cellar/gtest/lib 
 

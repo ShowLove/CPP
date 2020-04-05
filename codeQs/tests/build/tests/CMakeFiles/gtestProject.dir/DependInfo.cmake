@@ -4,9 +4,11 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueCharsTest.cpp" "/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o"
-  "/Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.cpp" "/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o"
-  "/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtestsMain.cpp" "/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o"
+  "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp" "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o"
+  "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueCharsTest.cpp" "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o"
+  "/Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.cpp" "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o"
+  "/Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.cpp" "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o"
+  "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtestsMain.cpp" "/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 

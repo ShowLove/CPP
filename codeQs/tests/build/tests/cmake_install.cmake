@@ -1,4 +1,4 @@
-# Install script for directory: /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests
+# Install script for directory: /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

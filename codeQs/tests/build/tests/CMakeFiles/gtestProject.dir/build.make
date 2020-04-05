@@ -43,10 +43,10 @@ RM = /usr/local/mac-dev-env/cmake-3.9.3/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/carlosgarzon/Desktop/code/cpp98/codeQs
+CMAKE_SOURCE_DIR = /Users/carlosgarzon/Desktop/code/cpp/codeQs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build
+CMAKE_BINARY_DIR = /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/gtestProject.dir/depend.make
@@ -59,16 +59,16 @@ include tests/CMakeFiles/gtestProject.dir/flags.make
 
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o: ../gtestsMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/gtestsMain.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtestsMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/gtestsMain.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtestsMain.cpp
 
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/gtestsMain.cpp.i"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtestsMain.cpp > CMakeFiles/gtestProject.dir/gtestsMain.cpp.i
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtestsMain.cpp > CMakeFiles/gtestProject.dir/gtestsMain.cpp.i
 
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/gtestsMain.cpp.s"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtestsMain.cpp -o CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtestsMain.cpp -o CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
 
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o.requires:
 
@@ -83,16 +83,16 @@ tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o.provides.build: tests/CMakeFi
 
 tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o: ../../StrHasUniqueChars.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.cpp
 
 tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.i"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.cpp > CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.i
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.cpp > CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.i
 
 tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.cpp -o CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.cpp -o CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s
 
 tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o.requires:
 
@@ -105,18 +105,42 @@ tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o.provides: tests/CMa
 tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o
 
 
+tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
+tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o: ../../ReverseStr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.cpp
+
+tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.i"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.cpp > CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.i
+
+tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.s"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.cpp -o CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.s
+
+tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.requires:
+
+.PHONY : tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.requires
+
+tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.provides: tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.provides
+
+tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o
+
+
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o: ../StrHasUniqueCharsTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueCharsTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueCharsTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.i"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueCharsTest.cpp > CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.i
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueCharsTest.cpp > CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.i
 
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.s"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueCharsTest.cpp -o CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.s
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueCharsTest.cpp -o CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.s
 
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o.requires:
 
@@ -129,22 +153,50 @@ tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o.provides: tests/CM
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o
 
 
+tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
+tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o: ../ReverseStrTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp
+
+tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.i"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp > CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.i
+
+tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.s"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp -o CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.s
+
+tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.requires:
+
+.PHONY : tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.requires
+
+tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.provides: tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.provides
+
+tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o
+
+
 # Object files for target gtestProject
 gtestProject_OBJECTS = \
 "CMakeFiles/gtestProject.dir/gtestsMain.cpp.o" \
 "CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o" \
-"CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o"
+"CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o" \
+"CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o" \
+"CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o"
 
 # External object files for target gtestProject
 gtestProject_EXTERNAL_OBJECTS =
 
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o
+tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o
+tests/gtestProject: tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/build.make
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable gtestProject"
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtestProject.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable gtestProject"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtestProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/gtestProject.dir/build: tests/gtestProject
@@ -153,15 +205,17 @@ tests/CMakeFiles/gtestProject.dir/build: tests/gtestProject
 
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o.requires
+tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o.requires
+tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.requires
 
 .PHONY : tests/CMakeFiles/gtestProject.dir/requires
 
 tests/CMakeFiles/gtestProject.dir/clean:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/gtestProject.dir/cmake_clean.cmake
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && $(CMAKE_COMMAND) -P CMakeFiles/gtestProject.dir/cmake_clean.cmake
 .PHONY : tests/CMakeFiles/gtestProject.dir/clean
 
 tests/CMakeFiles/gtestProject.dir/depend:
-	cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/carlosgarzon/Desktop/code/cpp98/codeQs /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/carlosgarzon/Desktop/code/cpp/codeQs /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests/CMakeFiles/gtestProject.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : tests/CMakeFiles/gtestProject.dir/depend
 

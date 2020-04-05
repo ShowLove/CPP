@@ -7,6 +7,7 @@ class MakeCompilable(object):
     self.cf = copyFiles.copyFiles() #import.class
     self.className =  self.cf.getClassName()
     self.nameSpace  = self.cf.getNameSpace()
+    self.topLevelDir = self.cf.getTopLevelDir()
     self.headerFile, self.SrcFile, self.TestFile = self.cf.getDstDirs()
     self.origClassName = "Foo"
     self.origNameSpace = "fooNameSpace"
@@ -40,22 +41,51 @@ class MakeCompilable(object):
     self.replaceStrInFile(self.SrcFile, self.origNameSpace, self.nameSpace)
     self.replaceStrInFile(self.TestFile, self.origNameSpace, self.nameSpace)
 
+  def updateCmake(self, srcName):
+    cmakeFile = self.topLevelDir + "/codeQs/tests/CMakeLists.txt"
+    if self.printDebug : print("TopLevelDir: " + cmakeFile)
+
+    #if we already updated cmake with this class don't do it again
+    if self.strExistsInFile(cmakeFile, self.className):
+      if self.printDebug : print("CMake was already updated with " + self.className)
+      return
+
+    # update source file
+    pyFlag = "#nextSource"
+    srcStr = "../" + srcName + ".cpp" + "\n  #nextSource"
+    self.replaceStrInFile(cmakeFile, pyFlag, srcStr)
+    # update header file
+    pyFlag = "#nextHeader"
+    headerStr = "../" + srcName + ".h" + "\n  #nextHeader"
+    self.replaceStrInFile(cmakeFile, pyFlag, headerStr)
+    # update test file
+    pyFlag = "#nextTest"
+    testStr = srcName + "Test.cpp" + "\n  #nextTest"
+    self.replaceStrInFile(cmakeFile, pyFlag, testStr)
+
+  def strExistsInFile(self, file, str):
+    with open(file) as f:
+        if str in f.read():
+            return True
+
   # This is the main function to be called by other classes
-  def makeClassCompilable():
+  def makeClassCompilable(self):
     self.updateHeaderClassName()
     self.updateSourceClassName()
     self.updateTestClassName()
     self.updateNameSpace()
+    self.updateCmake(self.className)
 
 
 ###################################
 # Run the code
 ##################################
-#obj = MakeCompilable()
-#obj.updateHeaderClassName()
-#obj.updateSourceClassName()
-#obj.updateTestClassName()
-#obj.updateNameSpace()
+obj = MakeCompilable()
+obj.updateHeaderClassName()
+obj.updateSourceClassName()
+obj.updateTestClassName()
+obj.updateNameSpace()
+obj.updateCmake(obj.className)
 
 
 

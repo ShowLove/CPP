@@ -6,25 +6,43 @@
 
 #IncludeRegexTransform: 
 
+../..//ReverseStr.h
+iostream
+-
+
 ../..//StrHasUniqueChars.h
 iostream
 -
 
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.cpp
-StrHasUniqueChars.h
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.cpp
+ReverseStr.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.h
 
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/StrHasUniqueChars.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.h
 iostream
 -
 
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueCharsTest.cpp
-gtest/gtest.h
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.cpp
 StrHasUniqueChars.h
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/StrHasUniqueChars.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.h
 
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtestsMain.cpp
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.h
+iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp
 gtest/gtest.h
-/Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtest/gtest.h
+ReverseStr.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStr.h
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueCharsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtest/gtest.h
+StrHasUniqueChars.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueChars.h
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtestsMain.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtest/gtest.h
 

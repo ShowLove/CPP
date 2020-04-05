@@ -19,4 +19,4 @@ g++ -lgtest firstTest.cpp -o firstTest.out
 cd /Users/carlosgarzon/Desktop/code/cpp98/utils/tests/build/ && cmake /Users/carlosgarzon/Desktop/code/cpp98/utils && make && ./tests/gtestProject
 
 /* compile code and run gtests for codeQs */
-cd /Users/carlosgarzon/Desktop/code/cpp98/codeQs/tests/build && cmake /Users/carlosgarzon/Desktop/code/cpp98/codeQs && make && ./tests/gtestProject
+cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && cmake /Users/carlosgarzon/Desktop/code/cpp/codeQs && make && ./tests/gtestProject
