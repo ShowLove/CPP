@@ -4,21 +4,28 @@ import makeCompilable as compilable
 import utils # delete class or print class info
 
 def main():
+  # initialize info class
   infoObj = utils.utils()
-  copyObj = cFiles.copyFiles()
-  compObj = compilable.makeCompilable()
-
-  print("0 = exit\n1 = info\n2 = create new class\n3 = delete class\n4 = test compile")
+  infoObj.printRepoClassList()
+  
+  
+  # prompt user
+  print("\n0 = exit\n1 = info\n2 = create new class\n3 = delete class\n4 = test compile")
   userInput = input("\nEnter your value: ") 
 
+  # prompt loop
   while userInput != 0:
     if userInput == 0: #exit
       break
     elif userInput == 1: #info
+      print("\n0 = exit\n1 = info\n2 = create new class\n3 = delete class\n4 = test compile")
       # print info
       infoObj.printRepoClassList()
       userInput = input("\nEnter your value: ")
     elif userInput == 2: # create new class
+      className = raw_input("\nClassName you want to delet (minus the extesion) e.g FooClass not FooClass.cpp: ")
+      copyObj = cFiles.copyFiles(className)
+      compObj = compilable.makeCompilable(className)
       # Copy and rename template files to src and test directory 
       copyObj.moveFiles()
       # Update the src header and test file such that it will compile 

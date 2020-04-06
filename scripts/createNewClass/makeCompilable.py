@@ -2,9 +2,9 @@ import copyFiles
 
 class makeCompilable(object):
 
-  def __init__(self):
+  def __init__(self, className):
     self.printDebug  = False
-    self.cf = copyFiles.copyFiles() #import.class
+    self.cf = copyFiles.copyFiles(className) #import.class
     self.className =  self.cf.getClassName()
     self.nameSpace  = self.cf.getNameSpace()
     self.topLevelDir = self.cf.getTopLevelDir()

@@ -6,7 +6,8 @@ class utils(object):
 
   def __init__(self):
     self.printDebug  = True
-    self.cf = copyFiles.copyFiles() #import.class
+    # using class for paths only no need to feed it a class name 
+    self.cf = copyFiles.copyFiles("NA") #import.class
     self.topLevelDir = self.cf.getTopLevelDir()
     self.repoDir = self.cf.getRepoDir()
     self.testDir = self.cf.getTestDir()

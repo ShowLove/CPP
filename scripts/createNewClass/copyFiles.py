@@ -14,7 +14,7 @@ import os     # to change directories using os
 
 class copyFiles(object):
 
-  def __init__(self):
+  def __init__(self, newClassName):
     self.printDebug  = False
     self.fooVar = 2
     self.repoName   = "codeQs"                        # change with new repo
@@ -23,7 +23,7 @@ class copyFiles(object):
     self.srcFile    = "Foo.cpp"
     self.testFile   = "FooTest.cpp"
     #name of new class
-    self.className  = "StrHasUniqueChars"             # change with new class
+    self.className  = newClassName                    # change with new class
     self.pathToTopLevlDir = "../../"
     self.pathToScriptDir  = "/scripts/createNewClass/"
     self.pathToRepoDir    = "/codeQs/"                # change with new repo
