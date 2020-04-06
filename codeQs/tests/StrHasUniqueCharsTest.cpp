@@ -1,32 +1,34 @@
 #include "gtest/gtest.h"
 #include "StrHasUniqueChars.h"
 
-namespace utils
+#define PRINT_SEARCH_DEBUG 0
+
+namespace codeQs
 {
 
 class StrHasUniqueCharsTest : public ::testing::Test {
 
  public:
 
-  StrHasUniqueCharsTest(){}
+  StrHasUniqueCharsTest() {}
   ~StrHasUniqueCharsTest(){}
 
  protected:
   virtual void SetUp() 
   {
-   
+  
   }
 
   virtual void TearDown() 
   {
 
   }
-
+  
+  //StrHasUniqueChars fooObj;
 };
 
-TEST_F(StrHasUniqueCharsTest, testConstructors){
-    EXPECT_TRUE(1);
-
+TEST_F(StrHasUniqueCharsTest, foo){
+  
 }
 
 } // utils end

@@ -1,9 +1,9 @@
-#ifndef CSTRINGUTILS
-#define CSTRINGUTILS
+#ifndef ASCIIUTILS
+#define ASCIIUTILS
 
 #include <iostream>
 
-namespace utils
+namespace codeQs
 {
 
 class StrHasUniqueChars
@@ -11,11 +11,14 @@ class StrHasUniqueChars
  public:
 
   StrHasUniqueChars(){}// Default constructor
+  
+  void fooFunction();
+
   ~StrHasUniqueChars(){}
 
  private:
 };
 
-} //utils end
+} //codeQs end
 
 #endif

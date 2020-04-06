@@ -15,17 +15,17 @@ include_directories("/usr/local/Cellar/gtest/lib")
 
 set(SOURCES
   gtestsMain.cpp
-  ../StrHasUniqueChars.cpp
   ../ReverseStr.cpp
+  ../StrHasUniqueChars.cpp
   #nextSource
-  StrHasUniqueCharsTest.cpp
   ReverseStrTest.cpp
+  StrHasUniqueCharsTest.cpp
   #nextTest
 )
 
 set(HEADERS
-  ../StrHasUniqueChars.h
   ../ReverseStr.h
+  ../StrHasUniqueChars.h
   #nextHeader
 )
 

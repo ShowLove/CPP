@@ -17,17 +17,17 @@ class copyFiles(object):
   def __init__(self):
     self.printDebug  = False
     self.fooVar = 2
-    self.repoName   = "codeQs"
+    self.repoName   = "codeQs"                        # change with new repo
     self.nameSpace  = self.repoName
     self.headerFile = "Foo.h"
     self.srcFile    = "Foo.cpp"
     self.testFile   = "FooTest.cpp"
     #name of new class
-    self.className  = "ReverseStr"
+    self.className  = "StrHasUniqueChars"             # change with new class
     self.pathToTopLevlDir = "../../"
     self.pathToScriptDir  = "/scripts/createNewClass/"
-    self.pathToRepoDir    = "/codeQs/"
-    self.pathToTestDir    = "/codeQs/tests/"
+    self.pathToRepoDir    = "/codeQs/"                # change with new repo
+    self.pathToTestDir    = "/codeQs/tests/"          # change with new repo
     self.pathToGenericCodeDir = "/syntax/codeTemplate/"
     self.topLevelDir = self.getTopLevelDir()
 
@@ -89,9 +89,11 @@ class copyFiles(object):
 
   def fileExists(self, path):
     if os.path.isfile(path):
-        if self.printDebug : print ("Successfuly created:\t\t" + path)
+        if self.printDebug : print ("File exists:\t\t" + path)
+        return True
     else:
-        if self.printDebug : print ("Failed to create:\t\t" + path)  
+        if self.printDebug : print ("File does not exist:\t\t" + path)
+        return False 
 
   # This is the main function to be called by other classes
   def moveFiles(self):

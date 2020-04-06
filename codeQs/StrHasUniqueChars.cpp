@@ -1,7 +1,11 @@
 #include "StrHasUniqueChars.h"
 
-namespace utils
+namespace codeQs
 {
 
+void StrHasUniqueChars::fooFunction()
+{
+  std::cout << "test was successfull" << std::endl;
+}
   
-} // utils end
+} // codeQs end
