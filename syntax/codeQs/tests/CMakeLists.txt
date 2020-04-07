@@ -16,11 +16,14 @@ include_directories("/usr/local/Cellar/gtest/lib")
 set(SOURCES
   gtestsMain.cpp
   ../StrHasUniqueChars.cpp
+  #nextSource
   StrHasUniqueCharsTest.cpp
+  #nextTest
 )
 
 set(HEADERS
   ../StrHasUniqueChars.h
+  #nextHeader
 )
 
 add_executable(${GTEST_PROJECT} ${SOURCES})

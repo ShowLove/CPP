@@ -11,6 +11,18 @@ iostream
 -
 
 ../..//StrHasUniqueChars.h
+cstring
+-
+iostream
+-
+utils.h
+../../utils.h
+
+../..//utils.h
+iostream
+-
+
+../../utils.h
 iostream
 -
 
@@ -27,8 +39,12 @@ StrHasUniqueChars.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.h
 
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.h
+cstring
+-
 iostream
 -
+utils.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.h
 
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp
 gtest/gtest.h
@@ -45,4 +61,18 @@ StrHasUniqueChars.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtestsMain.cpp
 gtest/gtest.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtest/gtest.h
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/utilsTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtest/gtest.h
+utils.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/utils.h
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.cpp
+utils.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.h
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.h
+iostream
+-
 

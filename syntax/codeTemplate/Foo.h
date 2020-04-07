@@ -1,5 +1,5 @@
-#ifndef ASCIIUTILS
-#define ASCIIUTILS
+#ifndef FOOGUARD
+#define FOOGUARD
 
 #include <iostream>
 

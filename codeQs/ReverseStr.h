@@ -1,5 +1,5 @@
-#ifndef ASCIIUTILS
-#define ASCIIUTILS
+#ifndef REVERSESTR
+#define REVERSESTR
 
 #include <iostream>
 

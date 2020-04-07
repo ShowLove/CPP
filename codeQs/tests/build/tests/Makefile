@@ -233,6 +233,33 @@ __/StrHasUniqueChars.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s
 .PHONY : __/StrHasUniqueChars.cpp.s
 
+__/utils.o: __/utils.cpp.o
+
+.PHONY : __/utils.o
+
+# target to build an object file
+__/utils.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/utils.cpp.o
+.PHONY : __/utils.cpp.o
+
+__/utils.i: __/utils.cpp.i
+
+.PHONY : __/utils.i
+
+# target to preprocess a source file
+__/utils.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/utils.cpp.i
+.PHONY : __/utils.cpp.i
+
+__/utils.s: __/utils.cpp.s
+
+.PHONY : __/utils.s
+
+# target to generate assembly for a file
+__/utils.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/utils.cpp.s
+.PHONY : __/utils.cpp.s
+
 gtestsMain.o: gtestsMain.cpp.o
 
 .PHONY : gtestsMain.o
@@ -260,6 +287,33 @@ gtestsMain.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.s
 .PHONY : gtestsMain.cpp.s
 
+utilsTest.o: utilsTest.cpp.o
+
+.PHONY : utilsTest.o
+
+# target to build an object file
+utilsTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o
+.PHONY : utilsTest.cpp.o
+
+utilsTest.i: utilsTest.cpp.i
+
+.PHONY : utilsTest.i
+
+# target to preprocess a source file
+utilsTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.i
+.PHONY : utilsTest.cpp.i
+
+utilsTest.s: utilsTest.cpp.s
+
+.PHONY : utilsTest.s
+
+# target to generate assembly for a file
+utilsTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.s
+.PHONY : utilsTest.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -281,9 +335,15 @@ help:
 	@echo "... __/StrHasUniqueChars.o"
 	@echo "... __/StrHasUniqueChars.i"
 	@echo "... __/StrHasUniqueChars.s"
+	@echo "... __/utils.o"
+	@echo "... __/utils.i"
+	@echo "... __/utils.s"
 	@echo "... gtestsMain.o"
 	@echo "... gtestsMain.i"
 	@echo "... gtestsMain.s"
+	@echo "... utilsTest.o"
+	@echo "... utilsTest.i"
+	@echo "... utilsTest.s"
 .PHONY : help
 
 

@@ -12,6 +12,8 @@ class makeCompilable(object):
     self.origClassName = "Foo"
     self.origNameSpace = "fooNameSpace"
     self.newFuncName   = "revStr"
+    self.origInludeGrd = "FOOGUARD"
+    self.newIncludeGrd = self.className.upper()
 
   def replaceStrInFile(self, fullPathFName, origStr, replaceStr):
     # Read in the file
@@ -26,6 +28,8 @@ class makeCompilable(object):
   def updateHeaderClassName(self):
     if self.printDebug : print("\nIn: " + self.headerFile + "\nupdated " + self.origClassName + " to " + self.className)
     self.replaceStrInFile(self.headerFile, self.origClassName, self.className)
+    # Update the include guarde as well
+    self.replaceStrInFile(self.headerFile, self.origInludeGrd, self.newIncludeGrd)
 
   def updateSourceClassName(self):
     if self.printDebug : print("\nIn: " + self.SrcFile + "\nupdated " + self.origClassName + " to " + self.className)

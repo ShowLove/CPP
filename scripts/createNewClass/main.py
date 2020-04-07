@@ -23,7 +23,7 @@ def main():
       infoObj.printRepoClassList()
       userInput = input("\nEnter your value: ")
     elif userInput == 2: # create new class
-      className = raw_input("\nClassName you want to delet (minus the extesion) e.g FooClass not FooClass.cpp: ")
+      className = raw_input("\nClassName you want to create (minus the extesion) e.g FooClass not FooClass.cpp: ")
       copyObj = cFiles.copyFiles(className)
       compObj = compilable.makeCompilable(className)
       # Copy and rename template files to src and test directory 
