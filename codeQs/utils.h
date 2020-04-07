@@ -10,7 +10,16 @@ class utils
 {
  public:
 
-  utils(){}// Default constructor
+  utils()
+  {
+     // SYNTAX: Seed rand in constructor once 
+     static bool firstRandomSeed = true;
+     if (firstRandomSeed) 
+     {  //seeding for the first time only!
+        srand( time(NULL) ); // SYNTAX: seed rand
+        firstRandomSeed = false;
+     }
+  }// Default constructor
   ~utils(){}
 
   ///////////////////////////////////////
@@ -33,6 +42,25 @@ class utils
    * @return an int random number in range [min, max]
    */
   int getRandomNumInRange(const int min, const int max) const;
+
+  /* Swaps the contents of two pointers. e.g chars in a string
+   * @param a pointer 1 to swap
+   * @param b pointer 2 to swap
+   * @return void
+   */ 
+  static void swapP( char *a, char *b );
+
+  /* Convert an std::string to char*, user is responsible for clean up
+   * @param str string you are converting to char*
+   * @return returns a char* version of std::string
+   */
+  static char* convertToCString(std::string str);
+
+  /* Convert an char* to std::string, assumes std::string is already constructed
+   * @param str string you are converting to char*
+   * @return returns a std::string version of char*
+   */
+  static void converStdStrToCStr(char* str, std::string& strStd);
 
 
  private:

@@ -15,8 +15,10 @@ class StrHasUniqueChars
 
   StrHasUniqueChars(){}// Default constructor
   
-  /* Implement an algorithm to determine if a string has all unique 
-   * characters. What if you cannot use additional data structures?
+  /* 1.2 Implement an algorithm to determine if a string has all unique 
+   * characters. What if you cannot use additional data structures?*/
+
+  /* Checks that a string has unique characters
    * @param takes an std string
    * @return returns true if has unique chars false otherwise
    */

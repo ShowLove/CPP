@@ -9,6 +9,8 @@
 ../..//ReverseStr.h
 iostream
 -
+utils.h
+../../utils.h
 
 ../..//StrHasUniqueChars.h
 cstring
@@ -33,6 +35,8 @@ ReverseStr.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.h
 iostream
 -
+utils.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.h
 
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/StrHasUniqueChars.cpp
 StrHasUniqueChars.h
@@ -51,6 +55,8 @@ gtest/gtest.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtest/gtest.h
 ReverseStr.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStr.h
+string.h
+-
 
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueCharsTest.cpp
 gtest/gtest.h

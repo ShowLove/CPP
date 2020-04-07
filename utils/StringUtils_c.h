@@ -28,8 +28,10 @@ class StringUtilsC
    */
   char *prompAndAlocStringDynamically(const int initialSize = UtilConst::DEFAULT_STR_SIZE) const;
   
-  /*
-   * TODO
+  /* Swaps the contents of two pointers. e.g chars in a string
+   * @param a pointer 1 to swap
+   * @param b pointer 2 to swap
+   * @return void
    */ 
   void swapP( char *a, char *b );
 

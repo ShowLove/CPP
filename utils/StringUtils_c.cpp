@@ -52,7 +52,7 @@ char *StringUtilsC::reverseString(char *str)
   int length = strLength(str);
   int middleIndx = (length - 1) / 2; // fastest way to always get middle index for odd or even
 
-  for(int i = 0; i < middleIndx; i++)
+  for(int i = 0; i < middleIndx; i++) // TODO Bug ? needs an equal sign ?
   {
     swapP( &str[i], &str[length - i - 1] );
   }

@@ -27,7 +27,7 @@ class StrHasUniqueCharsTest : public ::testing::Test {
   StrHasUniqueChars obj;
 };
 
-TEST_F(StrHasUniqueCharsTest, foo){
+TEST_F(StrHasUniqueCharsTest, uniqueCharactersTest){
     std::string str = "thishasrepeatchars"; 
     EXPECT_FALSE(obj.uniqueCharacters(str));
     std::string str2 = "abcdefghijkl1234";
