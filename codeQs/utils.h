@@ -48,7 +48,7 @@ class utils
    * @param b pointer 2 to swap
    * @return void
    */ 
-  static void swapP( char *a, char *b );
+  static void swapP( char *a, char *b ); // SYNTAX: use static in header not in src 
 
   /* Convert an std::string to char*, user is responsible for clean up
    * @param str string you are converting to char*

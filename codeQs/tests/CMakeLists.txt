@@ -18,10 +18,12 @@ set(SOURCES
   ../utils.cpp
   ../StrHasUniqueChars.cpp
   ../ReverseStr.cpp
+  ../StrIsPermutation.cpp
   #nextSource
   utilsTest.cpp
   StrHasUniqueCharsTest.cpp
   ReverseStrTest.cpp
+  StrIsPermutationTest.cpp
   #nextTest
 )
 
@@ -29,6 +31,7 @@ set(HEADERS
   ../utils.h
   ../StrHasUniqueChars.h
   ../ReverseStr.h
+  ../StrIsPermutation.h
   #nextHeader
 )
 

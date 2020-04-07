@@ -179,6 +179,33 @@ StrHasUniqueCharsTest.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.s
 .PHONY : StrHasUniqueCharsTest.cpp.s
 
+StrIsPermutationTest.o: StrIsPermutationTest.cpp.o
+
+.PHONY : StrIsPermutationTest.o
+
+# target to build an object file
+StrIsPermutationTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o
+.PHONY : StrIsPermutationTest.cpp.o
+
+StrIsPermutationTest.i: StrIsPermutationTest.cpp.i
+
+.PHONY : StrIsPermutationTest.i
+
+# target to preprocess a source file
+StrIsPermutationTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.i
+.PHONY : StrIsPermutationTest.cpp.i
+
+StrIsPermutationTest.s: StrIsPermutationTest.cpp.s
+
+.PHONY : StrIsPermutationTest.s
+
+# target to generate assembly for a file
+StrIsPermutationTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.s
+.PHONY : StrIsPermutationTest.cpp.s
+
 __/ReverseStr.o: __/ReverseStr.cpp.o
 
 .PHONY : __/ReverseStr.o
@@ -232,6 +259,33 @@ __/StrHasUniqueChars.s: __/StrHasUniqueChars.cpp.s
 __/StrHasUniqueChars.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.s
 .PHONY : __/StrHasUniqueChars.cpp.s
+
+__/StrIsPermutation.o: __/StrIsPermutation.cpp.o
+
+.PHONY : __/StrIsPermutation.o
+
+# target to build an object file
+__/StrIsPermutation.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.o
+.PHONY : __/StrIsPermutation.cpp.o
+
+__/StrIsPermutation.i: __/StrIsPermutation.cpp.i
+
+.PHONY : __/StrIsPermutation.i
+
+# target to preprocess a source file
+__/StrIsPermutation.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.i
+.PHONY : __/StrIsPermutation.cpp.i
+
+__/StrIsPermutation.s: __/StrIsPermutation.cpp.s
+
+.PHONY : __/StrIsPermutation.s
+
+# target to generate assembly for a file
+__/StrIsPermutation.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.s
+.PHONY : __/StrIsPermutation.cpp.s
 
 __/utils.o: __/utils.cpp.o
 
@@ -329,12 +383,18 @@ help:
 	@echo "... StrHasUniqueCharsTest.o"
 	@echo "... StrHasUniqueCharsTest.i"
 	@echo "... StrHasUniqueCharsTest.s"
+	@echo "... StrIsPermutationTest.o"
+	@echo "... StrIsPermutationTest.i"
+	@echo "... StrIsPermutationTest.s"
 	@echo "... __/ReverseStr.o"
 	@echo "... __/ReverseStr.i"
 	@echo "... __/ReverseStr.s"
 	@echo "... __/StrHasUniqueChars.o"
 	@echo "... __/StrHasUniqueChars.i"
 	@echo "... __/StrHasUniqueChars.s"
+	@echo "... __/StrIsPermutation.o"
+	@echo "... __/StrIsPermutation.i"
+	@echo "... __/StrIsPermutation.s"
 	@echo "... __/utils.o"
 	@echo "... __/utils.i"
 	@echo "... __/utils.s"
