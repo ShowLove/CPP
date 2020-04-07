@@ -177,9 +177,33 @@ tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.o.provides: tests/CMak
 tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.o
 
 
+tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
+tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o: ../../ReplaceSubString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.cpp
+
+tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.i"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.cpp > CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.i
+
+tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.s"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.cpp -o CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.s
+
+tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.requires:
+
+.PHONY : tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.requires
+
+tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.provides: tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.provides
+
+tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o
+
+
 tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o: ../utilsTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/utilsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/utilsTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.i: cmake_force
@@ -203,7 +227,7 @@ tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o.provides.build: tests/CMakeFil
 
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o: ../StrHasUniqueCharsTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrHasUniqueCharsTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.i: cmake_force
@@ -227,7 +251,7 @@ tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o.provides.build: te
 
 tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o: ../ReverseStrTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.i: cmake_force
@@ -251,7 +275,7 @@ tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.provides.build: tests/CMa
 
 tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
 tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o: ../StrIsPermutationTest.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o"
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/StrIsPermutationTest.cpp
 
 tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.i: cmake_force
@@ -273,6 +297,30 @@ tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o.provides: tests/CMa
 tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o
 
 
+tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o: tests/CMakeFiles/gtestProject.dir/flags.make
+tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o: ../ReplaceSubStringTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o -c /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReplaceSubStringTest.cpp
+
+tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.i"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReplaceSubStringTest.cpp > CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.i
+
+tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.s"
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReplaceSubStringTest.cpp -o CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.s
+
+tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.requires:
+
+.PHONY : tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.requires
+
+tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.provides: tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.requires
+	$(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.provides.build
+.PHONY : tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.provides
+
+tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.provides.build: tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o
+
+
 # Object files for target gtestProject
 gtestProject_OBJECTS = \
 "CMakeFiles/gtestProject.dir/gtestsMain.cpp.o" \
@@ -280,10 +328,12 @@ gtestProject_OBJECTS = \
 "CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o" \
 "CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o" \
 "CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.o" \
+"CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o" \
 "CMakeFiles/gtestProject.dir/utilsTest.cpp.o" \
 "CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o" \
 "CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o" \
-"CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o"
+"CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o" \
+"CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o"
 
 # External object files for target gtestProject
 gtestProject_EXTERNAL_OBJECTS =
@@ -293,13 +343,15 @@ tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/utils.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.o
+tests/gtestProject: tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o
+tests/gtestProject: tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/build.make
 tests/gtestProject: tests/CMakeFiles/gtestProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable gtestProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable gtestProject"
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtestProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -312,10 +364,12 @@ tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/StrHasUniqueChars.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/StrIsPermutation.cpp.o.requires
+tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/StrHasUniqueCharsTest.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o.requires
 tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o.requires
+tests/CMakeFiles/gtestProject.dir/requires: tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o.requires
 
 .PHONY : tests/CMakeFiles/gtestProject.dir/requires
 

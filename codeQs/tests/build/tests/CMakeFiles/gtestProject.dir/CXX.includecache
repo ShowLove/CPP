@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+../..//ReplaceSubString.h
+iostream
+-
+
 ../..//ReverseStr.h
 iostream
 -
@@ -31,6 +35,14 @@ iostream
 -
 
 ../../utils.h
+iostream
+-
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.cpp
+ReplaceSubString.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.h
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.h
 iostream
 -
 
@@ -65,6 +77,12 @@ iostream
 -
 utils.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.h
+
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReplaceSubStringTest.cpp
+gtest/gtest.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtest/gtest.h
+ReplaceSubString.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReplaceSubString.h
 
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReverseStrTest.cpp
 gtest/gtest.h

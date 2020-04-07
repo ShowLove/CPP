@@ -125,6 +125,33 @@ gtestProject/fast:
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/build
 .PHONY : gtestProject/fast
 
+ReplaceSubStringTest.o: ReplaceSubStringTest.cpp.o
+
+.PHONY : ReplaceSubStringTest.o
+
+# target to build an object file
+ReplaceSubStringTest.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o
+.PHONY : ReplaceSubStringTest.cpp.o
+
+ReplaceSubStringTest.i: ReplaceSubStringTest.cpp.i
+
+.PHONY : ReplaceSubStringTest.i
+
+# target to preprocess a source file
+ReplaceSubStringTest.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.i
+.PHONY : ReplaceSubStringTest.cpp.i
+
+ReplaceSubStringTest.s: ReplaceSubStringTest.cpp.s
+
+.PHONY : ReplaceSubStringTest.s
+
+# target to generate assembly for a file
+ReplaceSubStringTest.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.s
+.PHONY : ReplaceSubStringTest.cpp.s
+
 ReverseStrTest.o: ReverseStrTest.cpp.o
 
 .PHONY : ReverseStrTest.o
@@ -205,6 +232,33 @@ StrIsPermutationTest.s: StrIsPermutationTest.cpp.s
 StrIsPermutationTest.cpp.s:
 	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.s
 .PHONY : StrIsPermutationTest.cpp.s
+
+__/ReplaceSubString.o: __/ReplaceSubString.cpp.o
+
+.PHONY : __/ReplaceSubString.o
+
+# target to build an object file
+__/ReplaceSubString.cpp.o:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o
+.PHONY : __/ReplaceSubString.cpp.o
+
+__/ReplaceSubString.i: __/ReplaceSubString.cpp.i
+
+.PHONY : __/ReplaceSubString.i
+
+# target to preprocess a source file
+__/ReplaceSubString.cpp.i:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.i
+.PHONY : __/ReplaceSubString.cpp.i
+
+__/ReplaceSubString.s: __/ReplaceSubString.cpp.s
+
+.PHONY : __/ReplaceSubString.s
+
+# target to generate assembly for a file
+__/ReplaceSubString.cpp.s:
+	cd /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/build && $(MAKE) -f tests/CMakeFiles/gtestProject.dir/build.make tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.s
+.PHONY : __/ReplaceSubString.cpp.s
 
 __/ReverseStr.o: __/ReverseStr.cpp.o
 
@@ -377,6 +431,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... gtestProject"
+	@echo "... ReplaceSubStringTest.o"
+	@echo "... ReplaceSubStringTest.i"
+	@echo "... ReplaceSubStringTest.s"
 	@echo "... ReverseStrTest.o"
 	@echo "... ReverseStrTest.i"
 	@echo "... ReverseStrTest.s"
@@ -386,6 +443,9 @@ help:
 	@echo "... StrIsPermutationTest.o"
 	@echo "... StrIsPermutationTest.i"
 	@echo "... StrIsPermutationTest.s"
+	@echo "... __/ReplaceSubString.o"
+	@echo "... __/ReplaceSubString.i"
+	@echo "... __/ReplaceSubString.s"
 	@echo "... __/ReverseStr.o"
 	@echo "... __/ReverseStr.i"
 	@echo "... __/ReverseStr.s"
