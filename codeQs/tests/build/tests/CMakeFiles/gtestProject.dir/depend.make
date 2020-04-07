@@ -22,6 +22,7 @@ tests/CMakeFiles/gtestProject.dir/__/utils.cpp.o: ../../utils.h
 
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o: ../gtestsMain.cpp
 
+tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o: ../../ReverseStr.h
 tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o: ../../utils.h
 tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o: ../utilsTest.cpp
 

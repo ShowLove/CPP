@@ -3,7 +3,7 @@
 
 #include<string.h>
 
-#define PRINT_SReverseStr_DEBUG 0
+#define PRINT_ReverseStr_DEBUG 0
 
 namespace codeQs
 {
@@ -54,7 +54,6 @@ TEST_F(ReverseStrTest, reverseStringTest){
   char str2[] = "87654321";
 
   obj.reverseString(str1, 8);
-  std::cout << "str1:" << str1 << "str2:" << str2 << std::endl;
   EXPECT_TRUE(strcmp(str1, str2)==0); // SYNTAX compare two char*
 
   // Odd numbers
@@ -64,7 +63,6 @@ TEST_F(ReverseStrTest, reverseStringTest){
   char str4[] = "987654321";
 
   obj.reverseString(str3, 9);
-  std::cout << "str1:" << str3 << "str2:" << str4 << std::endl;
   EXPECT_TRUE(strcmp(str3, str4)==0); // SYNTAX compare two char*
 }
 

@@ -56,11 +56,11 @@ class utils
    */
   static char* convertToCString(std::string str);
 
-  /* Convert an char* to std::string, assumes std::string is already constructed
-   * @param str string you are converting to char*
-   * @return returns a std::string version of char*
+  /* Convert an std::string to a char* such that you can modify std from char*
+   * @param strStd string to be converted
+   * @return returns a char* string that changes std::string
    */
-  static void converStdStrToCStr(char* str, std::string& strStd);
+  static char* opOnStdFromChar(std::string& strStd);
 
 
  private:

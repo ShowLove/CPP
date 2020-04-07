@@ -23,5 +23,6 @@ tests/CMakeFiles/gtestProject.dir/__/utils.cpp.o
 tests/CMakeFiles/gtestProject.dir/gtestsMain.cpp.o
  /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/gtestsMain.cpp
 tests/CMakeFiles/gtestProject.dir/utilsTest.cpp.o
+ ../..//ReverseStr.h
  ../..//utils.h
  /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/utilsTest.cpp
