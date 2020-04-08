@@ -37,13 +37,20 @@ TEST_F(ReplaceSubStringTest, repSubStrTest){
 TEST_F(ReplaceSubStringTest, repSubStrCuostomTest){
   std::string data = "_123_45678_";
   std::string newString = "%--123%--45678%--";
-  obj.repSubStrCuostom(data, "_", "%--");
+  obj.repStrWithBiggerSubStr(data, "_", "%--");
   EXPECT_TRUE(data.compare(newString) == 0);
 
   data = "1_2_3_4_5_6_7_8";
   newString = "1%--2%--3%--4%--5%--6%--7%--8";
-  obj.repSubStrCuostom(data, "_", "%--");
+  obj.repStrWithBiggerSubStr(data, "_", "%--");
   EXPECT_TRUE(data.compare(newString) == 0);
+
+  // Does not replace with smaller substring
+  data = "---123---45678---";
+  newString = "-123-45678-";
+  obj.repStrWithBiggerSubStr(data, "---", "-");
+  std::cout << "str:" << data << std::endl;
+  EXPECT_FALSE(data.compare(newString) == 0);
 }
 
 TEST_F(ReplaceSubStringTest, numSubStringTest){

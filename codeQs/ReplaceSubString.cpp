@@ -4,7 +4,7 @@ namespace codeQs
 {
 
 
-void ReplaceSubString::repSubStrCuostom(std::string& str, const std::string subStr, const std::string replaceStr) const
+void ReplaceSubString::repStrWithBiggerSubStr(std::string& str, const std::string subStr, const std::string replaceStr) const
 {
   int numSubStr = numSubString(str, subStr);
   int oldLength = str.length();
@@ -20,7 +20,7 @@ void ReplaceSubString::repSubStrCuostom(std::string& str, const std::string subS
   }
   else if (!repStrIsBigger){
     int subStrDecBy = replaceStr.length() - subStr.length();
-    newLength = str.length() - (numSubStr * (replaceStr.length()));
+    newLength = str.length() - (numSubStr * subStrDecBy);
     // decrese array size after allocated so as to not loose data 
   }
 
@@ -31,16 +31,11 @@ void ReplaceSubString::repSubStrCuostom(std::string& str, const std::string subS
   {
     std::string tmpSubStr(utils::getSubstr(charStr, strIndx, subStr.length()));
     if(utils::strsAreEq(tmpSubStr, subStr))
-    {
       for(int i = replaceStr.length() - 1; (i >= 0); i--)
-      {
         str[newL--] = replaceStr[i];
-      }
-    }
+      
     else
-    {
       str[newL--] = str[strIndx];
-    }
   }
 
   // shorten size if replacment string is smaller than substring
