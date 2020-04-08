@@ -49,4 +49,12 @@ TEST_F(utilsTest, opOnStdFromCharTest){
   EXPECT_TRUE(converteCharStr.compare(stdStr)==0); 
 }
 
+TEST_F(utilsTest, strsAreEqTest){
+  std::string str1 = "abcdefg";
+  std::string str2 = "abcdefg";
+  std::string str3 = "abcdefgg";
+  EXPECT_TRUE(utils::strsAreEq(str1, str2));
+  EXPECT_FALSE(utils::strsAreEq(str1, str3));
+}
+
 } // utils end

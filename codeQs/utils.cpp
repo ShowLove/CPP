@@ -49,5 +49,26 @@ void utils::swapP( char *a, char *b )
   *a = *b;
   *b = tmp;
 }
+
+bool utils::strsAreEq(const std::string str1, const std::string str2)
+{
+  if(str1.length() != str2.length())
+    return false;
+
+  for(int i = 0; i < str1.length(); i++)
+    if(static_cast<int>(str1[i]) != static_cast<int>(str2[i]))
+      return false;
+
+  return true;
+}
+
+char* utils::getSubstr(const char* arr, const int begin, const int len)
+{
+    char* res = new char[len];
+    for (int i = 0; i < len; i++)
+        res[i] = *(arr + begin + i);
+    res[len] = 0;
+    return res;
+}
   
 } // codeQs end

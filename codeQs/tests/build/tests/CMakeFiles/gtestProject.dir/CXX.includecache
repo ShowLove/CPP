@@ -9,6 +9,8 @@
 ../..//ReplaceSubString.h
 iostream
 -
+utils.h
+../../utils.h
 
 ../..//ReverseStr.h
 iostream
@@ -45,6 +47,8 @@ ReplaceSubString.h
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.h
 iostream
 -
+utils.h
+/Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.h
 
 /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.cpp
 ReverseStr.h

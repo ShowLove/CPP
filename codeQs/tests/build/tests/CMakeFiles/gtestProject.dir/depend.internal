@@ -3,6 +3,7 @@
 
 tests/CMakeFiles/gtestProject.dir/ReplaceSubStringTest.cpp.o
  ../..//ReplaceSubString.h
+ ../../utils.h
  /Users/carlosgarzon/Desktop/code/cpp/codeQs/tests/ReplaceSubStringTest.cpp
 tests/CMakeFiles/gtestProject.dir/ReverseStrTest.cpp.o
  ../..//ReverseStr.h
@@ -19,6 +20,7 @@ tests/CMakeFiles/gtestProject.dir/StrIsPermutationTest.cpp.o
 tests/CMakeFiles/gtestProject.dir/__/ReplaceSubString.cpp.o
  /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.cpp
  /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReplaceSubString.h
+ /Users/carlosgarzon/Desktop/code/cpp/codeQs/utils.h
 tests/CMakeFiles/gtestProject.dir/__/ReverseStr.cpp.o
  /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.cpp
  /Users/carlosgarzon/Desktop/code/cpp/codeQs/ReverseStr.h
